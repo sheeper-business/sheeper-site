@@ -10,7 +10,7 @@ export default function Home() {
         <div className={css.textContent}>
           <p className={css.descLogin}>
             Welcome to Sheeper! Your Gateway to Unbeatable Deals! Where
-            incredible deals await you at every turn. At Sheeper, we're on a
+            incredible deals await you at every turn. At Sheeper, we are on a
             mission to save you time and money.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function Home() {
           <p className={css.descLogin}>
             Discover unbeatable deals and endless excitement at Sheeper! Explore
             curated collections on our vibrant homepage and dive into
-            jaw-dropping discounts on our Deals Page. Sheeper - where you'll
+            jaw-dropping discounts on our Deals Page. Sheeper - where you will
             find exclusive food deals. Download now and let the savings begin!
           </p>
         </div>
