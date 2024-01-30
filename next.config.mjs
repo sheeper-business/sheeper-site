@@ -1,12 +1,8 @@
-/**
-* @type {import('next').NextConfig}
-*/
-const nextConfig = {
-  images: {
-    loader: 'akamai',
-    path: '',
+module.exports = {
+  exportPathMap: async function () {
+    return {
+      '/': { page: '/' },
+      // Add other pages as needed
+    };
   },
-  assetPrefix: './',
 };
-
-export default nextConfig;
