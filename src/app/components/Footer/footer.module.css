@@ -1,21 +1,25 @@
 .host {
   display: flex;
   justify-content: space-around;
-  padding: 5rem;
   gap: 4rem;
+  padding: 0 2rem;
+     @media screen and (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  width: 20%;
   gap: 2rem;
 }
 
 .contacts {
   display: flex;
   flex-direction: column;
-  width: 20%;
   gap: 2rem;
 }
 

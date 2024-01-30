@@ -1,10 +1,8 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Home from "./home/page";
-import "@fontsource/raleway";
+import Image from 'next/image';
+import styles from './page.module.css';
+import '@fontsource/raleway';
+import { Home } from './home/Home';
 
 export default function page() {
-  return (
-      <Home />
-  );
+  return <Home />;
 }
