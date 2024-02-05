@@ -1,0 +1,65 @@
+.section {
+    width: 100%;
+    margin: 4rem 0rem;
+    background-color: var(--black-color);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    margin-top: 4rem;
+      @media screen and (max-width: 768px) {
+       width: 35%;
+       height: 35%;
+     }
+}
+
+.title {
+    color: var(--white-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+.containerTitle{
+    width: 50%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
+}
+
+.image {
+    margin-bottom: 3rem;
+      @media screen and (max-width: 768px) {
+       width: 80%;
+       height: 80%;
+     }
+}
+
+.textDiscover1 {
+    top: 50%;
+    font-size: 1.5rem;
+    left: 10%;
+     width: 20%;
+     @media screen and (max-width: 768px) {
+       display: none;
+     }
+}
+
+.textDiscover2 {
+    bottom: 10%;
+    font-size: 1.5rem;
+    right: 10%;
+    width: 20%;
+      @media screen and (max-width: 768px) {
+       display: none;
+     }
+}

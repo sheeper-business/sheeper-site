@@ -25,9 +25,9 @@ export default function RootLayout({
           <NavBar />
         </div>
         {children}
-        <div className={css.footer}>
-          <Footer />
-        </div>
+        {/* <div className={css.footer}> */}
+        <Footer />
+        {/* </div> */}
       </body>
     </html>
   );

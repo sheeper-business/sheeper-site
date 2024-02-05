@@ -9,10 +9,10 @@ export function NavBar() {
     <div className={css.host}>
       <div className={css.logo}>
         <Image
-          src="/logo.png"
+          src="/sheeper-text.png"
           alt="Logo da sua empresa"
-          width={100}
-          height={100}
+          width={158}
+          height={37}
           className={css.logo}
         />
 
