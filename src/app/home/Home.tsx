@@ -4,6 +4,7 @@ import Image from 'next/image';
 import '@fontsource/raleway';
 import { AboutSection } from '../sections/About/AboutSection';
 import { ShowcaseSection } from '../sections/Showcase/ShowcaseSection';
+import Link from 'next/link';
 
 export const Home = () => {
   return (
@@ -18,16 +19,21 @@ export const Home = () => {
         <Image className={css.image} src="/hero-phone.png" alt="Login" width={300} height={320} />
 
         <div className={css.containerButtons}>
-          <Image
-            src="/ios_store_button.webp"
-            alt="homepage"
-            width={225}
-            height={67}
-            className={css.storesImages}
-          />
+          <Link href="https://apps.apple.com/pt/app/sheeper/id6450721028" passHref>
+            <a target="blank" rel="noopener noreferrer">
+              <Image
+                src="/ios_store_button.webp"
+                alt="shepper ios"
+                width={225}
+                height={67}
+                className={css.storesImages}
+              />
+            </a>
+          </Link>
+
           <Image
             src="/android_store_button.webp"
-            alt="homepage"
+            alt="shepper android"
             width={225}
             height={67}
             className={css.storesImages}
