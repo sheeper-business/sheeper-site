@@ -3,7 +3,6 @@ import React from 'react';
 import css from './footer.module.css';
 import { IconButton } from './components/IconButton/IconButton';
 import { CiMail } from 'react-icons/ci';
-import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -11,17 +10,19 @@ export default function Footer() {
       <div className={css.info}>
         <span className={css.title}>Download Sheeper and enjoy your deals</span>
         <div className={css.containerButtons}>
-          <Link href="https://apps.apple.com/pt/app/sheeper/id6450721028" passHref>
-            <a target="blank" rel="noopener noreferrer">
-              <Image
-                src="/ios_store_button.webp"
-                alt="homepage"
-                width={225}
-                height={67}
-                className={css.storesImages}
-              />
-            </a>
-          </Link>
+          <a
+            target="blank"
+            rel="noopener noreferrer"
+            href="https://apps.apple.com/pt/app/sheeper/id6450721028"
+          >
+            <Image
+              src="/ios_store_button.webp"
+              alt="homepage"
+              width={225}
+              height={67}
+              className={css.storesImages}
+            />
+          </a>
           <Image
             src="/android_store_button.webp"
             alt="homepage"
