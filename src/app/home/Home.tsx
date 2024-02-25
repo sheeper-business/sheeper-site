@@ -4,7 +4,6 @@ import Image from 'next/image';
 import '@fontsource/raleway';
 import { AboutSection } from '../sections/About/AboutSection';
 import { ShowcaseSection } from '../sections/Showcase/ShowcaseSection';
-import Link from 'next/link';
 
 export const Home = () => {
   return (
@@ -13,23 +12,25 @@ export const Home = () => {
         <div className={css.content}>
           <h1 className={css.title}>Your Gateway to</h1>
           <h1 className={css.title}>
-            - Unbeatable <span className={css.dealsText}>deals</span>
+            Unbeatable <span className={css.dealsText}>deals</span>
           </h1>
         </div>
         <Image className={css.image} src="/hero-phone.png" alt="Login" width={300} height={320} />
 
         <div className={css.containerButtons}>
-          <Link href="https://apps.apple.com/pt/app/sheeper/id6450721028" passHref>
-            <a target="blank" rel="noopener noreferrer">
-              <Image
-                src="/ios_store_button.webp"
-                alt="shepper ios"
-                width={225}
-                height={67}
-                className={css.storesImages}
-              />
-            </a>
-          </Link>
+          <a
+            target="blank"
+            rel="noopener noreferrer"
+            href="https://apps.apple.com/pt/app/sheeper/id6450721028"
+          >
+            <Image
+              src="/ios_store_button.webp"
+              alt="shepper ios"
+              width={225}
+              height={67}
+              className={css.storesImages}
+            />
+          </a>
 
           <Image
             src="/android_store_button.webp"
