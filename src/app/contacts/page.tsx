@@ -3,7 +3,7 @@ import css from './contacts.module.css';
 
 export default function Contacts() {
   return (
-    <div style={{ height: '50vh' }}>
+    <div className={css.container}>
       <div className={css.contactSection}>
         <h2>Contact Us</h2>
         <p>For any questions or inquiries, feel free to reach out to us via email or phone.</p>

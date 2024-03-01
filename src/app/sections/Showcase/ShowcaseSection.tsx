@@ -12,7 +12,7 @@ export const ShowcaseSection = () => {
       </div>
       <Image src="/phones.png" alt="phones" width={450} height={450} className={css.image} />
       <TextAbsolute
-        text="Scroll through popular picks, filter by categories, and choose your location to uncover the best local deals."
+        text="Receive notifications of deals near by that matches your interests!"
         style={css.textDiscover1}
       />
       <TextAbsolute
