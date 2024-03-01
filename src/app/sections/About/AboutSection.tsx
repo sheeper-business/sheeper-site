@@ -15,22 +15,15 @@ export const AboutSection = () => {
         <Image
           src="/about1.png"
           alt="homepage"
-          width={330}
-          height={300}
+          width={580}
+          height={968}
           className={css.firstImage}
         />
         <Image
           src="/about2.png"
           alt="homepage"
-          width={330}
-          height={300}
-          className={css.secondImage}
-        />
-        <Image
-          src="/about1.png"
-          alt="homepage"
-          width={330}
-          height={350}
+          width={700}
+          height={1034}
           className={css.secondImage}
         />
       </div>
