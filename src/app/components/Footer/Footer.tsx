@@ -42,7 +42,7 @@ export default function Footer() {
         />
 
         <div className={css.containerContacts}>
-          <a className={css.contactsText} style={{ textDecoration: 'underline' }} href="/policy">
+          <a className={css.policyAnchor} style={{ textDecoration: 'underline' }} href="/policy">
             Privacy Policy
           </a>
           <span className={css.contactsText}>Contact us</span>
