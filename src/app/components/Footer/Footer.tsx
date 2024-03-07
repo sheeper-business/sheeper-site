@@ -40,7 +40,11 @@ export default function Footer() {
           height={37}
           className={css.logo}
         />
+
         <div className={css.containerContacts}>
+          <a className={css.contactsText} style={{ textDecoration: 'underline' }} href="/policy">
+            Privacy Policy
+          </a>
           <span className={css.contactsText}>Contact us</span>
 
           <IconButton icon={<CiMail size={24} />} />
