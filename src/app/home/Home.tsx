@@ -31,14 +31,19 @@ export const Home = () => {
               className={css.storesImages}
             />
           </a>
-
-          <Image
-            src="/android_store_button.webp"
-            alt="shepper android"
-            width={225}
-            height={67}
-            className={css.storesImages}
-          />
+          <a
+            target="blank"
+            rel="noopener noreferrer"
+            href="https://play.google.com/store/apps/details?id=com.sheeper.sheeper"
+          >
+            <Image
+              src="/android_store_button.webp"
+              alt="shepper android"
+              width={225}
+              height={67}
+              className={css.storesImages}
+            />
+          </a>
         </div>
       </section>
 
