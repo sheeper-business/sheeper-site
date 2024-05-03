@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export function NavBar() {
   return (
-    <div className={css.host}>
+    <nav className={css.host}>
       <div className={css.logo}>
         <Image
           src="/sheeper-text.png"
@@ -26,6 +26,10 @@ export function NavBar() {
           Contacts
         </Link>
       </div>
-    </div>
+      <div className={css.loginContainer}>
+        <span className={css.partner}>Are you a already a partner?&nbsp;</span>
+        <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link>
+      </div>
+    </nav>
   );
 }

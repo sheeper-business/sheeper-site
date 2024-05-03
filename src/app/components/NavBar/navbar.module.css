@@ -45,3 +45,23 @@
    align-self: center;
 }
 }
+
+.loginContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.partner {
+  font-weight: 400;
+}
+
+.login {
+  font-weight: 500;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.login:hover {
+  text-decoration: underline;
+}
