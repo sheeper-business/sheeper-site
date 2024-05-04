@@ -4,6 +4,7 @@ import Image from 'next/image';
 import '@fontsource/raleway';
 import { AboutSection } from '../sections/About/AboutSection';
 import { ShowcaseSection } from '../sections/Showcase/ShowcaseSection';
+import Link from 'next/link';
 
 export const Home = () => {
   return (
@@ -49,6 +50,10 @@ export const Home = () => {
 
       <AboutSection />
       <ShowcaseSection />
+      <div className={css.loginContainer}>
+        <span className={css.partner}>Are you a already a partner?&nbsp;</span>
+        <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link>
+      </div>
     </div>
   );
 };

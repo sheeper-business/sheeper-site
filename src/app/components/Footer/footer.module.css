@@ -31,7 +31,7 @@
   width: 50%;
   align-self: center;
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 1.75rem;
     width: 100%;
     margin: 2rem;
   }
