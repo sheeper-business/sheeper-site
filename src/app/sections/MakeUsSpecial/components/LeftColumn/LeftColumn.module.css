@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.firstBaloon {
+ width: 253px;
+ height: 114px;
+ border-radius: 40px;
+ border: 2px solid var(--secondary-color);
+}
+
+.secondBaloon {
+ width: 253px;
+ height: 244px;
+ border-radius: 40px;
+ border: 2px solid var(--secondary-color);
+}
+
+.image {
+    align-self: end;
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}

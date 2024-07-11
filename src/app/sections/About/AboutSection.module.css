@@ -41,8 +41,8 @@
   display: flex;
   gap: 2rem;
   padding: 0 2rem;
-  /* background-color: green; */
-  justify-content: flex-start;
+  height: 100vh;
+  justify-content: space-between;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
