@@ -6,7 +6,7 @@ import { RightColumn } from './components/RightColumn/RightColumn';
 
 export const MakeUsSpecial = () => {
     return (
-        <section className={css.section}>
+        <section id="make_special_section" className={css.section}>
             <LeftColumn />
             <RightColumn />
 

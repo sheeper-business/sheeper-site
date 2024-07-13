@@ -19,10 +19,13 @@ export function NavBar() {
         {/* <Image src="/sheeper.png" alt="Logo da sua empresa" width={150} height={50} /> */}
       </div>
       <div className={css.navbar}>
-        <Link className={css.navitem} href="/">
-          Home
+        <Link className={css.navitem} href="#about_section">
+          About
         </Link>
-        <Link className={css.navitem} href="/contacts">
+        <Link className={css.navitem} href="#showcase_section">
+          How it works
+        </Link>
+        <Link className={css.navitem} href="#footer">
           Contacts
         </Link>
       </div>

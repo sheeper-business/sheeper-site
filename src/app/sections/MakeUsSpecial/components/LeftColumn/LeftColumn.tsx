@@ -13,7 +13,7 @@ export const LeftColumn = () => {
                 </div>
 
                 <Image
-                    src="/about1.png"
+                    src="/MakeUsSpecial1.png"
                     alt="homepage"
                     width={314}
                     height={506}
@@ -27,7 +27,7 @@ export const LeftColumn = () => {
             </div>
             <div className={css.column}>
                 <Image
-                    src="/about1.png"
+                    src="/MakeUsSpecial2.png"
                     alt="homepage"
                     width={281}
                     height={468}
@@ -40,7 +40,7 @@ export const LeftColumn = () => {
                 </div>
 
                 <Image
-                    src="/about1.png"
+                    src="/MakeUsSpecial3.png"
                     alt="homepage"
                     width={280}
                     height={242}

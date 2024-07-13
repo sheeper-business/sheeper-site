@@ -1,0 +1,41 @@
+/* Button.module.css */
+.buttonContainer {
+    padding: 1rem 1.5rem;
+    min-width: 8rem;
+  }
+  
+  .buttonContainerFullWidth {
+    width: 100%;
+  }
+  
+  .buttonContainerContained {
+    background-color: #000; /* Replace with your color variable */
+  }
+  
+  .buttonContainerContained:hover {
+    background-color: #000; /* Prevent color change on hover */
+  }
+  
+  .buttonContainerResponsive {
+    width: 100%;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+  }
+  

@@ -6,6 +6,7 @@ import { AboutSection } from '../sections/About/AboutSection';
 import { ShowcaseSection } from '../sections/Showcase/ShowcaseSection';
 import Link from 'next/link';
 import { MakeUsSpecial } from '../sections/MakeUsSpecial/MakeUsSpecialSection';
+import { AppScreensSection } from '../sections/AppScreens/AppScreensSection';
 
 export const Home = () => {
   return (
@@ -51,11 +52,13 @@ export const Home = () => {
 
       <AboutSection />
       <ShowcaseSection />
-      <MakeUsSpecial />
+
       <div className={css.loginContainer}>
         <span className={css.partner}>Are you a already a partner?&nbsp;</span>
         <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link>
       </div>
+      <MakeUsSpecial />
+      <AppScreensSection />
     </div>
   );
 };

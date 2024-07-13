@@ -34,7 +34,7 @@
 }
 
 .navitem:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   font-weight: 500;
 }
 
@@ -54,12 +54,14 @@
 
 .partner {
   font-weight: 400;
+  font-size: 18px;
 }
 
 .login {
   font-weight: 500;
   color: var(--primary-color);
   cursor: pointer;
+  font-size: 18px;
 }
 
 .login:hover {

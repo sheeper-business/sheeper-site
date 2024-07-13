@@ -1,5 +1,7 @@
 .section {
   width: 100%;
+  display: flex;
+  gap: 2rem;
   margin-top: 4rem;
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -24,9 +26,6 @@
 }
 
 .containerText {
-  width: 60%;
-  margin-bottom: 3rem;
-  padding-left: 3rem;
   gap: 2rem;
   display: flex;
   flex-direction: column;
@@ -39,10 +38,7 @@
 
 .containerImages {
   display: flex;
-  gap: 2rem;
-  padding: 0 2rem;
-  height: 100vh;
-  justify-content: space-between;
+  margin-top: 18rem;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -54,7 +50,7 @@
   /* margin-top: 6rem; */
   max-inline-size: 100%;
   block-size: auto;
-  padding-top: 10rem;
+  padding-top: 8rem;
  
    @media screen and (max-width: 1024px) {
     display: none;
@@ -62,7 +58,6 @@
 }
 
 .secondImage {
-  padding-bottom: 10rem;
   /* height: 1034px; */
   @media screen and (max-width: 1024px) {
     width: 100%;
@@ -70,5 +65,22 @@
     height: 50%;
      /* height: 400px; */
   }
+}
+
+.downloadButton {
+  border-radius: 40px;
+}
+
+.downloadText {
+  font-size: 18px;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+}
+
+.containerDownload {
+  max-width: fit-content;
 }
 

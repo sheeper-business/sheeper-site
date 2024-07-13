@@ -1,28 +1,38 @@
 import Image from 'next/image';
 import React from 'react';
 import css from './AboutSection.module.css';
+import { AppButton } from '@/app/components/AppButton/AppButton';
 
 export const AboutSection = () => {
   return (
-    <section className={css.section}>
-      <div className={css.containerText}>
-        <h2 className={css.title}>Incredible deals are waiting for you..</h2>
-        <p className={css.description}>
-          We are on a mission to save your time and money. Your adventure begins with a single tap!
-        </p>
-      </div>
-      <div className={css.containerImages}>
+    <section id="about_section" className={css.section}>
+
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className={css.containerText}>
+          <h2 className={css.title}>Incredible deals are waiting for you..</h2>
+          <p className={css.description}>
+            We are on a mission to save your time and money. Your adventure begins with a single tap!
+          </p>
+          <div className={css.containerDownload}>
+            <AppButton variant="contained" color='secondary' className={css.downloadButton}><span className={css.downloadText}>Download now</span></AppButton>
+          </div>
+
+        </div>
         <Image
           src="/about1.png"
           alt="homepage"
-          width={580}
+          width={629}
           height={968}
           className={css.firstImage}
         />
+      </div>
+
+      <div className={css.containerImages}>
+
         <Image
           src="/about2.png"
           alt="homepage"
-          width={700}
+          width={879}
           height={1034}
           className={css.secondImage}
         />

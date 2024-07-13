@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image';
 import React from 'react';
 import css from './footer.module.css';
@@ -5,8 +7,16 @@ import { IconButton } from './components/IconButton/IconButton';
 import { CiMail } from 'react-icons/ci';
 
 export default function Footer() {
+  const openEmail = () => {
+    const email = 'sheeper.business@gmail.com';
+    const subject = 'How can we help?';
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoLink;
+  };
+
+
   return (
-    <div className={css.host}>
+    <div className={css.host} id='footer' >
       <div className={css.info}>
         <span className={css.title}>Download Sheeper and enjoy your deals</span>
         <div className={css.containerButtons}>
@@ -51,9 +61,11 @@ export default function Footer() {
           <a className={css.policyAnchor} style={{ textDecoration: 'underline' }} href="/policy">
             Privacy Policy
           </a>
-          <span className={css.contactsText}>Contact us</span>
+          <div onClick={() => openEmail()} style={{ display: 'flex', alignItems: 'center' }}>
+            <span className={css.contactsText}>Contact us</span>
 
-          <IconButton icon={<CiMail size={24} />} />
+            <IconButton icon={<CiMail size={24} />} />
+          </div>
         </div>
       </div>
     </div>

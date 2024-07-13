@@ -63,6 +63,14 @@
 .containerContacts {
   display: flex;
   align-items: center;
+ 
+}
+
+.contactsText:hover {
+  transform: scale(1.05);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .contactsText {

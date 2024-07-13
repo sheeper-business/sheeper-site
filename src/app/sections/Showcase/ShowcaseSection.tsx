@@ -5,7 +5,7 @@ import { TextAbsolute } from './components/TextAbsolute/TextAbsolute';
 
 export const ShowcaseSection = () => {
   return (
-    <section className={css.section}>
+    <section id="showcase_section" className={css.section}>
       <Image src="/logo_on_black.png" alt="logo" width={160} height={126} className={css.logo} />
       <div className={css.containerTitle}>
         <h3 className={css.title}>Dive into sheeper: Where Deals Find You!</h3>
