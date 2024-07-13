@@ -14,29 +14,30 @@ export const AboutSection = () => {
             We are on a mission to save your time and money. Your adventure begins with a single tap!
           </p>
           <div className={css.containerDownload}>
-            <AppButton variant="contained" color='secondary' className={css.downloadButton}><span className={css.downloadText}>Download now</span></AppButton>
+            <AppButton variant="contained" color='secondary' className={css.downloadButton} href='#footer' ><span className={css.downloadText}>Download now</span></AppButton>
           </div>
 
         </div>
-        <Image
-          src="/about1.png"
-          alt="homepage"
-          width={629}
-          height={968}
-          className={css.firstImage}
-        />
+        <div className={css.containerImages}>
+          <Image
+            src="/about1.png"
+            alt="homepage"
+            width={629}
+            height={968}
+            className={css.firstImage}
+          />
+          <Image
+            src="/about2.png"
+            alt="homepage"
+            width={879}
+            height={1034}
+            className={css.secondImage}
+          />
+        </div>
       </div>
 
-      <div className={css.containerImages}>
 
-        <Image
-          src="/about2.png"
-          alt="homepage"
-          width={879}
-          height={1034}
-          className={css.secondImage}
-        />
-      </div>
+
     </section>
   );
 };
