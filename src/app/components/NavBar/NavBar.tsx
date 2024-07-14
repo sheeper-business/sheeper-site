@@ -30,8 +30,7 @@ export function NavBar() {
         </Link>
       </div>
       <div className={css.loginContainer}>
-        <span className={css.partner}>Are you a already a partner?&nbsp;</span>
-        <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link>
+        <span className={css.partner}>Are you a already a partner? <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link></span>
       </div>
     </nav>
   );
