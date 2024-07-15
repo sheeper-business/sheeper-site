@@ -49,14 +49,15 @@ export const Home = () => {
           </a>
         </div>
       </section>
-
-      <AboutSection />
-      <ShowcaseSection />
-
       <div className={css.loginContainer}>
         <span className={css.partner}>Are you a already a partner?&nbsp;</span>
         <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link>
       </div>
+      <AboutSection />
+
+      <ShowcaseSection />
+
+
       <MakeUsSpecial />
       <AppScreensSection />
     </div>

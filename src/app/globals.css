@@ -23,6 +23,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: var(--font-raleway);
+  scroll-behavior: smooth;
 }
 
 body {

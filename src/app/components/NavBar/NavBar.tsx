@@ -8,13 +8,16 @@ export function NavBar() {
   return (
     <nav className={css.host}>
       <div className={css.logo}>
-        <Image
-          src="/sheeper-text.png"
-          alt="Logo da sua empresa"
-          width={158}
-          height={37}
-          className={css.logo}
-        />
+        <Link href={"/"}>
+          <Image
+            src="/sheeper-text.png"
+            alt="Logo da sua empresa"
+            width={158}
+            height={37}
+            className={css.logo}
+
+          />
+        </Link>
 
         {/* <Image src="/sheeper.png" alt="Logo da sua empresa" width={150} height={50} /> */}
       </div>

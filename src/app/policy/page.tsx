@@ -1,8 +1,9 @@
 import React from 'react';
+import { colors } from '../colors';
 
 export default function Policy() {
   return (
-    <div style={{ padding: '4rem' }}>
+    <div style={{ padding: '4rem', background: "#E6E6E6", borderRadius: 16, margin: "0 2rem 1rem 2rem" }}>
       <h2 style={{ marginBottom: '2rem' }}>Privacy Policy</h2>
       <p>
         This document sets forth the terms and conditions governing the use of the Sheeper mobile

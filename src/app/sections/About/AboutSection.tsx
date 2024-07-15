@@ -18,7 +18,7 @@ export const AboutSection = () => {
           </div>
 
         </div>
-        <div className={css.containerImages}>
+        {/* <div className={css.containerImages}>
           <Image
             src="/about1.png"
             alt="homepage"
@@ -33,7 +33,7 @@ export const AboutSection = () => {
             height={1034}
             className={css.secondImage}
           />
-        </div>
+        </div> */}
       </div>
 
 
