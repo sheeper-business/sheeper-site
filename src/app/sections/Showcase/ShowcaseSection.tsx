@@ -10,7 +10,7 @@ export const ShowcaseSection = () => {
       <div className={css.containerTitle}>
         <h3 className={css.title}>Dive into sheeper: Where Deals Find You!</h3>
       </div>
-      <Image src="/phones.png" alt="phones" width={1080} height={936} className={css.image} />
+      <Image src="/phones.png" alt="phones" width={934} height={924} className={css.image} />
       <TextAbsolute
         text="Get real-time notifications for nearby deals that match your interests as you pass by!"
         style={css.textDiscover1}
