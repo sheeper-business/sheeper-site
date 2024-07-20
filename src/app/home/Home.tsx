@@ -8,11 +8,23 @@ import Link from 'next/link';
 import { MakeUsSpecial } from '../sections/MakeUsSpecial/MakeUsSpecialSection';
 import { AppScreensSection } from '../sections/AppScreens/AppScreensSection';
 import Head from 'next/head';
+import Script from 'next/script';
 
 export const Home = () => {
   return (
     <div className={css.host}>
       <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3WY4BEL4R"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-X3WY4BEL4R');
+            `,
+          }}
+        />
         <title>Deals - Sheeper</title>
         <meta name="description" content="Find the best deals near you" />
       </Head>
