@@ -12,7 +12,7 @@ export const PairIconText = ({ icon, title, description }: IProps) => {
         <div className={css.container}>
             <div className={css.iconContainer}>{icon}</div>
             <div className={css.textContainer}>
-                <h6>{title}</h6>
+                <span className={css.title}>{title}</span>
                 <p className={css.description}>{description}</p>
             </div>
         </div>

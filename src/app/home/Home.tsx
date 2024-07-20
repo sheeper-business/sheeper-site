@@ -38,7 +38,7 @@ export const Home = () => {
             Unbeatable <span className={css.dealsText}>deals</span>
           </h1>
         </div>
-        <Image className={css.image} src="/hero-phone.png" alt="Login" width={384} height={417} />
+        <Image className={css.image} src="/hero-phone.png" alt="Login" width={384} height={417} loading='eager' />
 
         <div className={css.containerButtons}>
           <a
