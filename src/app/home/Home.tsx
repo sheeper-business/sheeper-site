@@ -14,20 +14,24 @@ export const Home = () => {
   return (
     <div className={css.host}>
       <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3WY4BEL4R"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-X3WY4BEL4R');
-            `,
-          }}
-        />
         <title>Deals - Sheeper</title>
         <meta name="description" content="Find the best deals near you" />
       </Head>
+
+      {/* Google Analytics */}
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-X3WY4BEL4R"></Script>
+      <Script
+        id="google-analytics"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-X3WY4BEL4R');
+          `,
+        }}
+      />
+
       <section className={css.heroSection}>
         <div className={css.content}>
           <h1 className={css.title}>Your Gateway to</h1>
@@ -71,12 +75,10 @@ export const Home = () => {
         <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link>
       </div>
       <AboutSection />
-
       <ShowcaseSection />
-
-
       <MakeUsSpecial />
       <AppScreensSection />
     </div>
   );
 };
+
