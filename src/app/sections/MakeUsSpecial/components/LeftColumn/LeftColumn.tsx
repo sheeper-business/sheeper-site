@@ -14,9 +14,9 @@ export const LeftColumn = () => {
 
                 <Image
                     src="/MakeUsSpecial1.png"
-                    alt="homepage"
-                    width={314}
-                    height={506}
+                    alt="example1"
+                    width={281}
+                    height={469}
                     className={css.image}
                 />
                 <div style={{ height: '25%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignContent: 'flex-end', alignItems: 'flex-end' }}>
@@ -28,9 +28,9 @@ export const LeftColumn = () => {
             <div className={css.column}>
                 <Image
                     src="/MakeUsSpecial2.png"
-                    alt="homepage"
-                    width={281}
-                    height={468}
+                    alt="example2"
+                    width={314}
+                    height={506}
                     className={css.image}
                 />
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignContent: 'flex-end', alignItems: 'flex-end' }}>
@@ -41,7 +41,7 @@ export const LeftColumn = () => {
 
                 <Image
                     src="/MakeUsSpecial3.png"
-                    alt="homepage"
+                    alt="example3"
                     width={280}
                     height={242}
                     className={css.image}

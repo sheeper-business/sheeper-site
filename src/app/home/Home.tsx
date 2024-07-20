@@ -34,12 +34,11 @@ export const Home = () => {
 
       <section className={css.heroSection}>
         <div className={css.content}>
-          <h1 className={css.title}>Your Gateway to</h1>
-          <h1 className={css.title}>
+          <h1 className={css.title}>Your Gateway to
             Unbeatable <span className={css.dealsText}>deals</span>
           </h1>
         </div>
-        <Image className={css.image} src="/hero-phone.png" alt="Login" width={300} height={320} />
+        <Image className={css.image} src="/hero-phone.png" alt="Login" width={384} height={417} />
 
         <div className={css.containerButtons}>
           <a

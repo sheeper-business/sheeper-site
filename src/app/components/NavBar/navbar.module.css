@@ -29,8 +29,9 @@
 .navitem {
   transition: transform 0.3s;
   font-size: 1.25rem;
-  color: var(--text-grey-color);
+  color: var(--grey-color);
   font-family: Raleway;
+  font-weight: 500;
 }
 
 .navitem:hover {
@@ -59,7 +60,7 @@
 }
 
 .login {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--primary-color);
   cursor: pointer;
   font-size: 18px;
