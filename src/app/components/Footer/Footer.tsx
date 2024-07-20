@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <div className={css.host} id='footer' >
       <div className={css.info}>
-        <span className={css.title}>Download Sheeper and enjoy your deals</span>
+        <h3 className={css.title}>Download Sheeper and enjoy your deals</h3>
         <div className={css.containerButtons}>
           <a
             target="blank"

@@ -7,10 +7,15 @@ import { ShowcaseSection } from '../sections/Showcase/ShowcaseSection';
 import Link from 'next/link';
 import { MakeUsSpecial } from '../sections/MakeUsSpecial/MakeUsSpecialSection';
 import { AppScreensSection } from '../sections/AppScreens/AppScreensSection';
+import Head from 'next/head';
 
 export const Home = () => {
   return (
     <div className={css.host}>
+      <Head>
+        <title>Deals - Sheeper</title>
+        <meta name="description" content="Find the best deals near you" />
+      </Head>
       <section className={css.heroSection}>
         <div className={css.content}>
           <h1 className={css.title}>Your Gateway to</h1>

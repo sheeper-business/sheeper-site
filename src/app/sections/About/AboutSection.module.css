@@ -3,10 +3,12 @@
   display: flex;
   gap: 2rem;
   margin-top: 4rem;
+  margin-bottom: 2rem;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     margin-top: 0rem;
+    margin-bottom: 1rem;
   }
 }
 

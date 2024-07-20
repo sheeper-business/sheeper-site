@@ -6,7 +6,7 @@ import { GroupOutlined, NotificationsOutlined, RedeemOutlined } from '@mui/icons
 export const RightColumn = () => {
     return (
         <div className={css.rightColumn}>
-            <h1 className={css.title}>What makes us special?</h1>
+            <h3 className={css.title}>What makes us special?</h3>
             <div className={css.grid}>
 
                 <PairIconText icon={<RedeemOutlined style={{ width: 64, height: 64 }} color='primary' />} title="Tailored deals" description="Our algorithm customizes deals to match your unique preferences and purchasing behavior, ensuring every offer resonates with your interests and maximizes your savings potential." />
