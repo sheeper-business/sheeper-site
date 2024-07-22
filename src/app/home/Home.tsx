@@ -16,6 +16,16 @@ export const Home = () => {
       <Head>
         <title>Deals - Sheeper</title>
         <meta name="description" content="Find the best deals near you" />
+        <meta name="keywords" content="deals, discounts, offers, best deals, Sheeper" />
+        <meta property="og:title" content="Deals - Sheeper" />
+        <meta property="og:description" content="Find the best deals near you with Sheeper." />
+        <meta property="og:image" content="/hero-phone.png" />
+        <meta property="og:url" content="https://www.sheeper.app" />
+        <meta name="twitter:title" content="Deals - Sheeper" />
+        <meta name="twitter:description" content="Find the best deals near you with Sheeper." />
+        <meta name="twitter:image" content="/hero-phone.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+
       </Head>
 
       {/* Google Analytics */}
