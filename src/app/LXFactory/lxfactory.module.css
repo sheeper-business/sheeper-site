@@ -175,7 +175,7 @@
     }
     @media screen and (max-width: 768px) {
       font-size: 2.5rem;
-      color: var(--black-color);
+      color: var(--black-color) !important;
       font-weight: 700;
     }  
   }
