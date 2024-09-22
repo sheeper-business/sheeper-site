@@ -9,7 +9,7 @@ export default function LXFactory() {
             <section className={css.heroSection}>
                 <div className={css.content}>
                     <h1 className={css.title}>Find the best deals in LX Factory
-                        Unbeatable <span className={css.dealsText}>deals</span>
+                        {/* Unbeatable <span className={css.dealsText}>deals</span> */}
                     </h1>
                 </div>
                 <Image className={css.image} src="/hero-phone.png" alt="Login" width={300} height={320} loading='eager' />
