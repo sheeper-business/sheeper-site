@@ -9,6 +9,8 @@ import { MakeUsSpecial } from '../sections/MakeUsSpecial/MakeUsSpecialSection';
 import { AppScreensSection } from '../sections/AppScreens/AppScreensSection';
 import Head from 'next/head';
 import Script from 'next/script';
+import { Step } from './components/Steps/Step';
+import { PartnerBanner } from './components/PartnerBanner/PartnerBanner';
 
 export const Home = () => {
   return (
@@ -25,7 +27,6 @@ export const Home = () => {
         <meta name="twitter:description" content="Find the best deals near you with Sheeper." />
         <meta name="twitter:image" content="/hero-phone.png" />
         <meta name="twitter:card" content="summary_large_image" />
-
       </Head>
 
       {/* Google Analytics */}
@@ -43,51 +44,90 @@ export const Home = () => {
       />
 
       <section className={css.heroSection}>
-        <div className={css.content}>
-          <h1 className={css.title}>Your Gateway to
-            Unbeatable <span className={css.dealsText}>deals</span>
-          </h1>
-        </div>
-        <Image className={css.image} src="/hero-phone.png" alt="Login" width={300} height={320} loading='eager' />
-
-        <div className={css.containerButtons}>
-          <a
-            target="blank"
-            rel="noopener noreferrer"
-            href="https://apps.apple.com/pt/app/sheeper/id6450721028"
-          >
-            <Image
-              src="/ios_store_button.webp"
-              alt="shepper ios"
-              width={225}
-              height={67}
-              className={css.storesImages}
-            />
-          </a>
-          <a
-            target="blank"
-            rel="noopener noreferrer"
-            href="https://play.google.com/store/apps/details?id=com.sheeper.sheeper"
-          >
-            <Image
-              src="/android_store_button.webp"
-              alt="shepper android"
-              width={225}
-              height={67}
-              className={css.storesImages}
-            />
-          </a>
+        <div className={css.newHeader}>
+          <Image
+            className={css.image}
+            src="/iphones.png"
+            alt="Login"
+            width={400}
+            height={585}
+            loading="eager"
+          />
+          <div className={css.newContent}>
+            <h1>Your gateway to unbeatable deals</h1>
+            <p style={{ fontSize: 20 }}>
+              Unlock exclusive deals at top restaurants, shops, and experiences with Sheeper. Save
+              big while discovering the best spots in town!
+            </p>
+            <div className={css.containerButtons}>
+              <a
+                target="blank"
+                rel="noopener noreferrer"
+                href="https://apps.apple.com/pt/app/sheeper/id6450721028"
+              >
+                <Image
+                  src="/ios_store_button.webp"
+                  alt="shepper ios"
+                  width={169}
+                  height={50}
+                  className={css.storesImages}
+                />
+              </a>
+              <a
+                target="blank"
+                rel="noopener noreferrer"
+                href="https://play.google.com/store/apps/details?id=com.sheeper.sheeper"
+              >
+                <Image
+                  src="/android_store_button.webp"
+                  alt="shepper android"
+                  width={169}
+                  height={50}
+                  className={css.storesImages}
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-      <div className={css.loginContainer}>
+      {/* <div className={css.loginContainer}>
         <span className={css.partner}>Are you a already a partner?&nbsp;</span>
-        <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link>
-      </div>
-      <AboutSection />
-      <ShowcaseSection />
+        <Link href={'https://sheeperbusiness.app/login'} className={css.login}>
+          Login here
+        </Link>
+      </div> */}
+      <PartnerBanner />
+      <section
+        id="how_it_works"
+        style={{ marginTop: '6rem', display: 'flex', gap: '3rem', flexDirection: 'column' }}
+      >
+        <h2 className={css.title}>How it works</h2>
+        <div className={css.stepsContainer}>
+          <Step
+            title="Choose a deal"
+            description="Find a deal that matches your taste!"
+            image="/HomepageScreen.png"
+            index="1"
+          />
+          <Step
+            title="See if it matches your taste"
+            description="See the video from the influencer to see if it what you want!"
+            image="/DealScreen.png"
+            index="2"
+          />
+          <Step
+            title="Redeem the deal"
+            description="Redeem the deal in our app and enjoy!"
+            image="/RedeemDeal.png"
+            index="3"
+          />
+        </div>
+      </section>
+      {/* <AboutSection /> */}
       <MakeUsSpecial />
-      <AppScreensSection />
+
+      <ShowcaseSection />
+      {/* <AppScreensSection /> */}
     </div>
   );
 };
-

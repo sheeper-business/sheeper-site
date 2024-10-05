@@ -1,14 +1,16 @@
 :root {
   --bg: #ffffff;
   --text: black;
-  --font: "Raleway";
-  --font-raleway: "Raleway";
-  --primary-color: #009DE2;
-  --secondary-color: #01DBFF;
+  --font: 'Raleway';
+  --font-raleway: 'Raleway';
+  --primary-color: #009de2;
+  --secondary-color: #01dbff;
   --black-color: #000000;
   --white-color: #ffffff;
-  --grey-color:#595959;
-  --text-grey-color:#757784;
+  --grey-color: #595959;
+  --text-grey-color: #757784;
+  --secondary-light-color: rgba(1, 219, 255, 0.2);
+  --primary-light-color: rgba(0, 157, 226, 0.3);
 }
 
 * {
@@ -47,6 +49,7 @@ a {
 
 h1 {
   font-size: 3rem;
+  font-weight: 800;
 }
 
 h6 {

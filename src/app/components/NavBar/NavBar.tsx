@@ -8,14 +8,13 @@ export function NavBar() {
   return (
     <nav className={css.host}>
       <div className={css.logo}>
-        <Link href={"/"}>
+        <Link href={'/'}>
           <Image
             src="/sheeper-text.png"
             alt="Logo da sua empresa"
             width={158}
             height={37}
             className={css.logo}
-
           />
         </Link>
 
@@ -25,7 +24,7 @@ export function NavBar() {
         <Link className={css.navitem} href="#about_section">
           About
         </Link>
-        <Link className={css.navitem} href="#showcase_section">
+        <Link className={css.navitem} href="#how_it_works">
           How it works
         </Link>
         <Link className={css.navitem} href="#footer">
@@ -33,7 +32,12 @@ export function NavBar() {
         </Link>
       </div>
       <div className={css.loginContainer}>
-        <span className={css.partner}>Are you a already a partner? <Link href={"https://sheeperbusiness.app/login"} className={css.login}>Login here</Link></span>
+        <span className={css.partner}>
+          Are you a already a partner?{' '}
+          <Link href={'https://sheeperbusiness.app/login'} className={css.login}>
+            Login here
+          </Link>
+        </span>
       </div>
     </nav>
   );

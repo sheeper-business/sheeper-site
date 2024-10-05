@@ -1,0 +1,25 @@
+.container {
+  background-color: var(--black-color);
+  border-radius: 2rem;
+  width: 100%;
+
+  display: flex;
+  flex: 1;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.title:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--secondary-color);
+}
+
+.title {
+  color: var(--white-color);
+}
+
+.description {
+  color: var(--white-color);
+  font-size: 1.25rem;
+}
