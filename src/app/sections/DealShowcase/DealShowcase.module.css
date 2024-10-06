@@ -1,0 +1,208 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.leftSection,
+.rightSection {
+  flex: 1;
+  padding: 4rem;
+  text-align: center;
+}
+
+.leftSection {
+  background-color: #f7fbfe;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSection {
+  background-color: #e6f0ff;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.dealList {
+  background-color: #f0f4f8;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.dealItem {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.dealImage {
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.dealInfo {
+  flex-grow: 1;
+}
+
+.dealName {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.establishmentName {
+  color: #666;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.dealDetails {
+  color: #3b82f6;
+  font-size: 0.875rem;
+}
+
+.dealPrice {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #3b82f6;
+}
+
+.phoneContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.phone {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 300px;
+  height: 600px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.phoneHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.locationSelector {
+  font-weight: bold;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  color: #3b82f6;
+}
+
+.categories {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.categoryImage {
+  border-radius: 50%;
+  margin-bottom: 0.25rem;
+}
+
+.appSectionTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.appDealItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.appDealImage {
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.appDealInfo {
+  flex-grow: 1;
+}
+
+.appDealName {
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.appEstablishmentName {
+  color: #666;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.appDealDetails {
+  color: #3b82f6;
+  font-size: 0.75rem;
+}
+
+.appDealPrice {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.appHeartIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #3b82f6;
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .leftSection,
+  .rightSection {
+    width: 50%;
+  }
+}

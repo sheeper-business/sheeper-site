@@ -5,6 +5,7 @@ import React from 'react';
 import css from './footer.module.css';
 import { IconButton } from './components/IconButton/IconButton';
 import { CiMail } from 'react-icons/ci';
+import { FaInstagram, FaTiktok } from 'react-icons/fa';
 
 export default function Footer() {
   const openEmail = () => {
@@ -65,6 +66,12 @@ export default function Footer() {
 
             <IconButton icon={<CiMail size={24} />} />
           </div>
+          <a href="https://www.instagram.com/sheeper.app/">
+            <IconButton icon={<FaInstagram size={24} />} />
+          </a>
+          <a href="https://www.tiktok.com/@sheeperapp">
+            <IconButton icon={<FaTiktok size={24} />} />
+          </a>
         </div>
       </div>
     </div>

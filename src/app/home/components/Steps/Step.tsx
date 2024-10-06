@@ -18,16 +18,16 @@ export const Step = ({ title, description, image, index }: IProps) => {
         <div>
           <div
             style={{
-              width: 48,
-              height: 48,
-              background: colors.secondary,
-              borderRadius: 48,
+              width: 32,
+              height: 32,
+              background: colors.primary,
+              borderRadius: 8,
               justifyContent: 'center',
               alignItems: 'center',
               display: 'flex',
             }}
           >
-            <span style={{ fontWeight: 700 }}>{index}</span>
+            <span style={{ fontWeight: 700, color: colors.white }}>{index}</span>
           </div>
         </div>
         <div>

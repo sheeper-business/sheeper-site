@@ -11,6 +11,9 @@ import Head from 'next/head';
 import Script from 'next/script';
 import { Step } from './components/Steps/Step';
 import { PartnerBanner } from './components/PartnerBanner/PartnerBanner';
+import SpecialFeatures from '../sections/teste/SpecialFeatures';
+import { colors } from '../colors';
+import DealShowcase from '../sections/DealShowcase/DealShowcase';
 
 export const Home = () => {
   return (
@@ -42,63 +45,80 @@ export const Home = () => {
           `,
         }}
       />
-
-      <section className={css.heroSection}>
-        <div className={css.newHeader}>
-          <Image
-            className={css.image}
-            src="/iphones.png"
-            alt="Login"
-            width={400}
-            height={585}
-            loading="eager"
-          />
-          <div className={css.newContent}>
-            <h1>Your gateway to unbeatable deals</h1>
-            <p style={{ fontSize: 20 }}>
-              Unlock exclusive deals at top restaurants, shops, and experiences with Sheeper. Save
-              big while discovering the best spots in town!
-            </p>
-            <div className={css.containerButtons}>
-              <a
-                target="blank"
-                rel="noopener noreferrer"
-                href="https://apps.apple.com/pt/app/sheeper/id6450721028"
-              >
-                <Image
-                  src="/ios_store_button.webp"
-                  alt="shepper ios"
-                  width={169}
-                  height={50}
-                  className={css.storesImages}
-                />
-              </a>
-              <a
-                target="blank"
-                rel="noopener noreferrer"
-                href="https://play.google.com/store/apps/details?id=com.sheeper.sheeper"
-              >
-                <Image
-                  src="/android_store_button.webp"
-                  alt="shepper android"
-                  width={169}
-                  height={50}
-                  className={css.storesImages}
-                />
-              </a>
+      <div className={css.containerFirstTwoSection}>
+        <section className={css.heroSection}>
+          <div className={css.newHeader}>
+            <div className={css.newContent}>
+              <h1 className={css.title}>Your gateway to unbeatable deals</h1>
+              <p style={{ fontSize: 20, marginTop: '2rem' }}>
+                Unlock exclusive deals at top restaurants, shops, and experiences with Sheeper. Save
+                big while discovering the best spots in town!
+              </p>
+              <div className={css.containerButtons}>
+                <a
+                  target="blank"
+                  rel="noopener noreferrer"
+                  href="https://apps.apple.com/pt/app/sheeper/id6450721028"
+                >
+                  <Image
+                    src="/ios_store_button.webp"
+                    alt="shepper ios"
+                    width={211}
+                    height={63}
+                    className={css.storesImages}
+                  />
+                </a>
+                <a
+                  target="blank"
+                  rel="noopener noreferrer"
+                  href="https://play.google.com/store/apps/details?id=com.sheeper.sheeper"
+                >
+                  <Image
+                    src="/android_store_button.webp"
+                    alt="shepper android"
+                    width={211}
+                    height={63}
+                    className={css.storesImages}
+                  />
+                </a>
+              </div>
             </div>
+            <Image
+              className={css.image}
+              src="/hero-phone.png"
+              alt="Login"
+              width={300}
+              height={325}
+              loading="eager"
+            />
           </div>
-        </div>
-      </section>
-      {/* <div className={css.loginContainer}>
+        </section>
+        {/* <div className={css.loginContainer}>
         <span className={css.partner}>Are you a already a partner?&nbsp;</span>
         <Link href={'https://sheeperbusiness.app/login'} className={css.login}>
           Login here
         </Link>
       </div> */}
-      <PartnerBanner />
+        <ShowcaseSection />
+      </div>
+
       <section id="how_it_works" className={css.sectionHowItWorks}>
-        <h2 className={css.title}>How it works</h2>
+        <div>
+          <h2 className={css.title}>How it works</h2>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div
+              style={{
+                background: '#E4F2FF',
+                borderRadius: 36,
+                padding: '1rem',
+                width: 'fit-content',
+                marginTop: '1rem',
+              }}
+            >
+              <span style={{ color: colors.primary, fontWeight: 700 }}>3 easy steps</span>
+            </div>
+          </div>
+        </div>
         <div className={css.stepsContainer}>
           <Step
             title="Choose a deal"
@@ -120,10 +140,12 @@ export const Home = () => {
           />
         </div>
       </section>
-      {/* <AboutSection /> */}
-      <MakeUsSpecial />
+      <SpecialFeatures />
+      <DealShowcase />
 
-      <ShowcaseSection />
+      {/* <AboutSection /> */}
+      {/* <MakeUsSpecial /> */}
+
       {/* <AppScreensSection /> */}
     </div>
   );

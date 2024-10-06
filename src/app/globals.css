@@ -11,6 +11,7 @@
   --text-grey-color: #757784;
   --secondary-light-color: rgba(1, 219, 255, 0.2);
   --primary-light-color: rgba(0, 157, 226, 0.3);
+  --background-color: #f5f5f5;
 }
 
 * {

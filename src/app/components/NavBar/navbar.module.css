@@ -13,7 +13,6 @@
     padding-top: 2rem;
     height: 4rem;
   }
- 
 }
 
 .navbar {
@@ -41,12 +40,11 @@
 
 .logo {
   @media screen and (max-width: 768px) {
-   align-self: center;
-}
+    align-self: center;
+  }
 }
 
 .loginContainer {
-  width: 200px;
   display: flex;
   @media screen and (max-width: 768px) {
     display: none;

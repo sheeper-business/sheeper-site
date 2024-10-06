@@ -10,15 +10,36 @@ export const ShowcaseSection = () => {
       <div className={css.containerTitle}>
         <h3 className={css.title}>Dive into sheeper: Where Deals Find You!</h3>
       </div>
-      <Image src="/phones.png" alt="phones" width={934} height={924} className={css.image} />
-      <TextAbsolute
-        text="Get real-time notifications for nearby deals that match your interests as you pass by!"
-        style={css.textDiscover1}
-      />
-      <TextAbsolute
-        text="Unlock exclusive deals tailored to you, delivered straight to your device as you go about your day with Sheeper."
-        style={css.textDiscover2}
-      />
+      <Image src="/three_phones.png" alt="phones" width={1409} height={878} className={css.image} />
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '2rem',
+          alignContent: 'center',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '80%',
+          textAlign: 'center',
+          paddingBottom: '4rem',
+        }}
+      >
+        <p className={css.linkText}>
+          Scroll through popular picks, filter by categories, and choose your location to uncover
+          the best local deals. Click on a deal to reveal all the juicy details, explore the
+          description, location, similar deals, and share it with ease.
+        </p>
+        <div>
+          <p className={css.linkText}>
+            <a className={css.link} href="https://www.sheeperbusiness.app/register">
+              Do you want to become a partner? It`s free!
+            </a>
+          </p>
+          <p className={css.linkText}>
+            Discover how partnering with us can enhance your business and bring in more customers.
+          </p>
+        </div>
+      </div>
     </section>
   );
 };
