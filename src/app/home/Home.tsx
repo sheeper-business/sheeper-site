@@ -97,10 +97,7 @@ export const Home = () => {
         </Link>
       </div> */}
       <PartnerBanner />
-      <section
-        id="how_it_works"
-        style={{ marginTop: '6rem', display: 'flex', gap: '3rem', flexDirection: 'column' }}
-      >
+      <section id="how_it_works" className={css.sectionHowItWorks}>
         <h2 className={css.title}>How it works</h2>
         <div className={css.stepsContainer}>
           <Step

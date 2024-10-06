@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Image from 'next/image';
 import React from 'react';
@@ -14,9 +14,8 @@ export default function Footer() {
     window.location.href = mailtoLink;
   };
 
-
   return (
-    <div className={css.host} id='footer' >
+    <div className={css.host} id="footer">
       <div className={css.info}>
         <h6 className={css.title}>Download Sheeper and enjoy your deals</h6>
         <div className={css.containerButtons}>
