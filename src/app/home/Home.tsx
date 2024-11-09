@@ -50,38 +50,38 @@ export const Home = () => {
           <div className={css.newHeader}>
             <div className={css.newContent}>
               <h1 className={css.title}>Your gateway to unbeatable deals</h1>
-              <p style={{ fontSize: 20, marginTop: '2rem' }}>
+              <p className={css.description}>
                 Unlock exclusive deals at top restaurants, shops, and experiences with Sheeper. Save
                 big while discovering the best spots in town!
               </p>
-              <div className={css.containerButtons}>
-                <a
-                  target="blank"
-                  rel="noopener noreferrer"
-                  href="https://apps.apple.com/pt/app/sheeper/id6450721028"
-                >
-                  <Image
-                    src="/ios_store_button.webp"
-                    alt="shepper ios"
-                    width={211}
-                    height={63}
-                    className={css.storesImages}
-                  />
-                </a>
-                <a
-                  target="blank"
-                  rel="noopener noreferrer"
-                  href="https://play.google.com/store/apps/details?id=com.sheeper.sheeper"
-                >
-                  <Image
-                    src="/android_store_button.webp"
-                    alt="shepper android"
-                    width={211}
-                    height={63}
-                    className={css.storesImages}
-                  />
-                </a>
-              </div>
+            </div>
+            <div className={css.containerButtons}>
+              <a
+                target="blank"
+                rel="noopener noreferrer"
+                href="https://apps.apple.com/pt/app/sheeper/id6450721028"
+              >
+                <Image
+                  src="/ios_store_button.webp"
+                  alt="shepper ios"
+                  width={211}
+                  height={63}
+                  className={css.storesImages}
+                />
+              </a>
+              <a
+                target="blank"
+                rel="noopener noreferrer"
+                href="https://play.google.com/store/apps/details?id=com.sheeper.sheeper"
+              >
+                <Image
+                  src="/android_store_button.webp"
+                  alt="shepper android"
+                  width={211}
+                  height={63}
+                  className={css.storesImages}
+                />
+              </a>
             </div>
             <Image
               className={css.image}
