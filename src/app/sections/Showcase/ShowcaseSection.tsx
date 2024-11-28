@@ -10,7 +10,7 @@ export const ShowcaseSection = () => {
       <div className={css.containerTitle}>
         <h3 className={css.title}>Dive into sheeper: Where Deals Find You!</h3>
       </div>
-      <Image src="/three_phones.png" alt="phones" width={1409} height={878} className={css.image} />
+      <Image src="/showcase.png" alt="phones" width={1408} height={878} className={css.image} />
       <div
         style={{
           display: 'flex',
@@ -31,7 +31,7 @@ export const ShowcaseSection = () => {
         </p>
         <div>
           <p className={css.linkText}>
-            <a className={css.link} href="https://www.sheeperbusiness.app/register">
+            <a className={css.link} href="https://oiatg37ji32.typeform.com/to/i8HpBOjV">
               Do you want to become a partner? It`s free!
             </a>
           </p>

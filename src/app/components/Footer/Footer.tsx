@@ -61,7 +61,10 @@ export default function Footer() {
           <a className={css.policyAnchor} style={{ textDecoration: 'underline' }} href="/policy">
             Privacy Policy
           </a>
-          <div onClick={() => openEmail()} style={{ display: 'flex', alignItems: 'center' }}>
+          <div
+            onClick={() => openEmail()}
+            style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}
+          >
             <span className={css.contactsText}>Contact us</span>
 
             <IconButton icon={<CiMail size={24} />} />
