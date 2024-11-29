@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "about": "About",
+    "how_it_works": "How it works",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Discover exclusive restaurant offers and local deals tailored for you",
+    "description": "With Sheeper, explore amazing deals at your favorite local restaurants and shops. Save more while enjoying authentic experiences tailored to your taste"
+  },
+  "how_it_works": {
+    "title": "How it works",
+    "steps": {
+      "title": "3 easy steps",
+      "first": {
+        "title": "Choose a deal",
+        "description": "Find a deal that matches your taste!"
+      },
+      "second": {
+        "title": "See if it matches your taste",
+        "description": "See the video from the influencer to see if it what you want!"
+      },
+      "third": {
+        "title": "Get the deal",
+        "description": "Go to the establishment and get the deal!"
+      }
+    }
+  },
+  "what_make_us_special": {
+    "title": "What make us special?",
+    "available_to_everyone": {
+      "title": "Exclusive Deals at Your Favorite Restaurants and Bars",
+      "description": "Dive into a world of exclusive offers at the best restaurants and bars, where unique flavors and experiences await you."
+    },
+    "location_notifications": {
+      "title": "Real time notifications",
+      "description": "Receive notifications in real-time based on your current location, ensuring you never miss out on nearby deals. Our system intelligently targets deals near your common locations such as home, workplace, and frequent hangout spots, enhancing convenience and maximizing savings on-the-go."
+    },
+    "tailored_deals": {
+      "title": "Tailored deals",
+      "description": "Our algorithm customizes deals to match your unique preferences and purchasing behavior, ensuring every offer resonates with your interests and maximizes your savings potential."
+    }
+  },
+  "showcase": {
+    "title": "Dive into sheeper: Where Deals Find You!",
+    "description": " Scroll through popular picks, filter by categories, and choose your location to uncover the best local deals. Click on a deal to reveal all the juicy details, explore the description, location, similar deals, and share it with ease.",
+    "partner": "Do you want to become a partner? It`s free!",
+    "partner.info": "Discover how partnering with us can enhance your business and bring in more customers."
+  },
+  "deal_showcase": {
+    "left_column": {
+      "title": "Every deal you need.",
+      "description": "Discover the trendiest deals at restaurants and bars. Everything you need for a great time, all in one place with Sheeper"
+    },
+    "right_column": {
+      "title": "Watch real deals.",
+      "description": "See what deals are trending right now from your favorite creators"
+    }
+  }
+}

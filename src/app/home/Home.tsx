@@ -1,21 +1,21 @@
+'use client';
+
 import React from 'react';
 import css from './home.module.css';
 import Image from 'next/image';
 import '@fontsource/raleway';
-import { AboutSection } from '../sections/About/AboutSection';
 import { ShowcaseSection } from '../sections/Showcase/ShowcaseSection';
-import Link from 'next/link';
-import { MakeUsSpecial } from '../sections/MakeUsSpecial/MakeUsSpecialSection';
-import { AppScreensSection } from '../sections/AppScreens/AppScreensSection';
 import Head from 'next/head';
 import Script from 'next/script';
 import { Step } from './components/Steps/Step';
-import { PartnerBanner } from './components/PartnerBanner/PartnerBanner';
 import SpecialFeatures from '../sections/teste/SpecialFeatures';
 import { colors } from '../colors';
 import DealShowcase from '../sections/DealShowcase/DealShowcase';
+import { useTranslation } from 'react-i18next';
 
 export const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={css.host}>
       <Head>
@@ -49,11 +49,8 @@ export const Home = () => {
         <section className={css.heroSection}>
           <div className={css.newHeader}>
             <div className={css.newContent}>
-              <h1 className={css.title}>Your gateway to unbeatable deals</h1>
-              <p className={css.description}>
-                Unlock exclusive deals at top restaurants, shops, and experiences with Sheeper. Save
-                big while discovering the best spots in town!
-              </p>
+              <h1 className={css.title}>{t('hero.title')}</h1>
+              <p className={css.description}>{t('hero.description')}</p>
             </div>
             <div className={css.containerButtons}>
               <a
@@ -104,7 +101,7 @@ export const Home = () => {
 
       <section id="how_it_works" className={css.sectionHowItWorks}>
         <div>
-          <h2 className={css.title}>How it works</h2>
+          <h2 className={css.title}>{t('how_it_works.title')}</h2>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <div
               style={{
@@ -115,26 +112,28 @@ export const Home = () => {
                 marginTop: '1rem',
               }}
             >
-              <span style={{ color: colors.primary, fontWeight: 700 }}>3 easy steps</span>
+              <span style={{ color: colors.primary, fontWeight: 700 }}>
+                {t('how_it_works.steps.title')}
+              </span>
             </div>
           </div>
         </div>
         <div className={css.stepsContainer}>
           <Step
-            title="Choose a deal"
-            description="Find a deal that matches your taste!"
+            title={t('how_it_works.steps.first.title')}
+            description={t('how_it_works.steps.first.description')}
             image="/HomepageScreen.png"
             index="1"
           />
           <Step
-            title="See if it matches your taste"
-            description="See the video from the influencer to see if it what you want!"
+            title={t('how_it_works.steps.second.title')}
+            description={t('how_it_works.steps.second.description')}
             image="/DealScreen.png"
             index="2"
           />
           <Step
-            title="Redeem the deal"
-            description="Redeem the deal in our app and enjoy!"
+            title={t('how_it_works.steps.third.title')}
+            description={t('how_it_works.steps.third.description')}
             image="/RedeemDeal.png"
             index="3"
           />

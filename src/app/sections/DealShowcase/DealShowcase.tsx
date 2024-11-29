@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './DealShowcase.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function DealShowcase() {
   const deals = [
@@ -50,14 +53,13 @@ export default function DealShowcase() {
 
   const categories = ['Food', 'Travel', 'Entertainment', 'Shopping', 'Fitness'];
 
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
       <div className={styles.leftSection}>
-        <h2 className={styles.title}>Every deal you need.</h2>
-        <p className={styles.description}>
-          Discover the trendiest deals at restaurants and bars. Everything you need for a great
-          time, all in one place with Sheeper{' '}
-        </p>
+        <h2 className={styles.title}>{t('deal_showcase.left_column.title')}</h2>
+        <p className={styles.description}>{t('deal_showcase.left_column.description')}</p>
         <div
           style={{
             display: 'flex',
@@ -72,10 +74,8 @@ export default function DealShowcase() {
         </div>
       </div>
       <div className={styles.rightSection}>
-        <h2 className={styles.title}>Watch real deals.</h2>
-        <p className={styles.description}>
-          See what deals are trending right now from your favorite creators
-        </p>
+        <h2 className={styles.title}>{t('deal_showcase.right_column.title')}</h2>
+        <p className={styles.description}>{t('deal_showcase.right_column.description')}</p>
         <Image src="/HomepageScreen.png" alt="placeholder" width={288} height={620} />
       </div>
     </div>

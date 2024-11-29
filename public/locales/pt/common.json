@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "about": "Sobre",
+    "how_it_works": "Como funciona",
+    "contacts": "Contactos"
+  },
+  "hero": {
+    "title": "Descubra ofertas exclusivas em restaurantes e negócios locais feitas para si",
+    "description": "Com o Sheeper, explore ofertas incríveis nos seus restaurantes e lojas locais favoritos. Poupe mais enquanto aproveita experiências autênticas feitas para si."
+  },
+  "how_it_works": {
+    "title": "Como funciona",
+    "steps": {
+      "title": "3 passos simples",
+      "first": {
+        "title": "Escolha um deal",
+        "description": "Encontre um deal que combine com o seu gosto!"
+      },
+      "second": {
+        "title": "Veja se combina com o seu gosto",
+        "description": "Veja o vídeo do influenciador para perceber se é o que procura!"
+      },
+      "third": {
+        "title": "Aproveite o deal",
+        "description": "Vá até ao estabelecimento e aproveite o deal!"
+      }
+    }
+  },
+  "what_make_us_special": {
+    "title": "O que nos torna especiais?",
+    "available_to_everyone": {
+      "title": "Ofertas Exclusivas nos Seus Restaurantes e Bares Favoritos",
+      "description": "Explore um mundo de ofertas exclusivas nos melhores restaurantes e bares, onde sabores únicos e experiências incríveis esperam por si."
+    },
+    "location_notifications": {
+      "title": "Notificações em tempo real",
+      "description": "Receba notificações em tempo real com base na sua localização atual, garantindo que nunca perca oportunidades próximas. O nosso sistema identifica deals perto de locais que frequenta, como casa, trabalho ou pontos habituais, proporcionando conveniência e maximizando as poupanças no seu dia-a-dia."
+    },
+    "tailored_deals": {
+      "title": "Deals personalizados",
+      "description": "O nosso algoritmo adapta os deals às suas preferências e comportamentos de compra, garantindo que cada oferta é relevante para si e maximiza o seu potencial de poupança."
+    }
+  },
+  "showcase": {
+    "title": "Mergulhe no Sheeper: Onde os Deals o Encontram!",
+    "description": "Percorra os destaques mais populares, filtre por categorias e escolha a sua localização para descobrir as melhores ofertas locais. Clique num deal para ver todos os detalhes, explorar a descrição, localização, deals semelhantes e partilhá-lo com facilidade.",
+    "partner": "Quer tornar-se um parceiro? É grátis!",
+    "partner.info": "Descubra como ser nosso parceiro pode melhorar o seu negócio e atrair mais clientes."
+  },
+  "deal_showcase": {
+    "left_column": {
+      "title": "Todos os deals de que precisa.",
+      "description": "Descubra os deals mais procurados em restaurantes e bares. Tudo o que precisa para se divertir, num só lugar com o Sheeper."
+    },
+    "right_column": {
+      "title": "Veja deals reais.",
+      "description": "Veja os deals que estão em alta agora, trazidos pelos seus criadores favoritos."
+    }
+  }
+}
