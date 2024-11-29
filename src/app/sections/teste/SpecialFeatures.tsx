@@ -24,7 +24,9 @@ export default function SpecialFeatures() {
           <div className={styles.textContainer}>
             <div className={styles.featureHeader}>
               {/* <User className={styles.icon} /> */}
-              <FaUsers color={colors.primary} size={40} />
+              <div>
+                <FaUsers color={colors.primary} size={40} />
+              </div>
               <h3 className={styles.featureTitle}>
                 {t('what_make_us_special.available_to_everyone.title')}
               </h3>
