@@ -1,4 +1,4 @@
-import { PaletteColorOptions, createTheme } from '@mui/material/styles';
+import { PaletteColor, PaletteColorOptions, createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 import { colors } from './colors';
 
@@ -76,6 +76,9 @@ const theme = createTheme({
             fontFamily: 'Raleway',
             color: colors.primary, // Label color
             backgroundColor: '#E4F2FF', // Button background
+            '&:hover': {
+              backgroundColor: '#f5f5f5', // Slightly darker white on hover
+            },
             // border: `1px solid ${colors.black}`, // Black border
           },
         },
