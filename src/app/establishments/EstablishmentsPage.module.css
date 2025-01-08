@@ -5,27 +5,90 @@
   height: 100vh;
   gap: 2rem;
   padding-left: 5rem;
-  padding-bottom: 8rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 4rem;
+    height: auto;
+  }
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: 800;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.buttonContainer {
+  width: 100%;
+}
+
+.buttonContainerDesktop {
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.imageContainerHeroSection {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .description {
   font-size: 1.25rem;
   font-weight: 400;
   color: var(--text-grey-color);
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .loyaltyCardSection {
   display: flex;
   background-color: var(--black-color);
-  height: 100vh;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Ensures the content stays within bounds */
+  max-width: 100%; /* Prevents horizontal overflow */
+  box-sizing: border-box;
+  padding-bottom: 4rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    gap: 0;
+  }
+}
+
+.textContainerHeroSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.textContainerLoyaltyCardSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+  }
 }
 
 .influencerSection {
@@ -38,16 +101,39 @@
   width: 75%;
   align-self: center;
   padding-bottom: 8rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+  }
 }
 
 .loyaltyCardSectionTitle {
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--white-color);
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.loyaltyCardImageContainer {
+  display: flex;
+  max-width: 592px;
+  width: 100%;
+  padding: 3rem 1rem 0 1rem;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 2rem;
+  }
 }
 
 .influencerSectionTitle {
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--black-color);
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
 }

@@ -9,10 +9,10 @@ export default function HeroSection() {
 
   return (
     <div className={css.container}>
-      <div style={{ width: '40%', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+      <div className={css.textContainerHeroSection}>
         <h1 className={css.title}>{t('establishmentsPage.title')}</h1>
         <p className={css.description}>{t('establishmentsPage.description')}</p>
-        <div style={{ width: '50%' }}>
+        <div className={css.buttonContainer}>
           <AppButton
             type="button"
             variant="contained"
@@ -24,7 +24,7 @@ export default function HeroSection() {
           </AppButton>
         </div>
       </div>
-      <div>
+      <div className={css.imageContainerHeroSection}>
         <Image src={'/establishments_hero.png'} width={715} height={582} alt="Establishments" />
       </div>
     </div>

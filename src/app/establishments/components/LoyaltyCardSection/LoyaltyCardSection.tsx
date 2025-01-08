@@ -9,11 +9,17 @@ export default function LoyaltyCardSection() {
 
   return (
     <div className={css.loyaltyCardSection}>
-      <div>
-        <Image src={'/loyalty_card_section.png'} width={592} height={663} alt="Establishments" />
+      <div className={css.loyaltyCardImageContainer}>
+        <Image
+          src={'/loyalty_card_section.png'}
+          width={592}
+          height={663}
+          alt="Establishments"
+          layout="responsive"
+        />
       </div>
-      <div style={{ width: '40%', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-        <div style={{ width: '50%' }}>
+      <div className={css.textContainerLoyaltyCardSection}>
+        <div className={css.buttonContainerDesktop}>
           <AppButton
             type="button"
             variant="contained"

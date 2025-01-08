@@ -33,7 +33,7 @@ export default function InfluencerSection() {
             {t('establishmentsPage.form_link_button')}
           </AppButton>
         </div>
-        <div style={{ width: '400px', height: '600px', margin: 'auto' }}>
+        <div style={{ width: 'auto', height: '600px', margin: 'auto', maxWidth: '400px' }}>
           <video
             src="/influencer_video.mp4"
             controls
