@@ -16,6 +16,7 @@ export default function LoyaltyCardSection() {
           height={663}
           alt="Establishments"
           layout="responsive"
+          priority
         />
       </div>
       <div className={css.textContainerLoyaltyCardSection}>

@@ -25,7 +25,13 @@ export default function HeroSection() {
         </div>
       </div>
       <div className={css.imageContainerHeroSection}>
-        <Image src={'/establishments_hero.png'} width={715} height={582} alt="Establishments" />
+        <Image
+          src={'/establishments_hero.png'}
+          width={715}
+          height={582}
+          alt="Establishments"
+          priority
+        />
       </div>
     </div>
   );
