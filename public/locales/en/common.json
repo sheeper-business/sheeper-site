@@ -58,6 +58,16 @@
       "description": "See what deals are trending right now from your favorite creators"
     }
   },
+  "establishment_showcase": {
+    "left_column": {
+      "title": "Promote your establishment",
+      "description": "Showcase your deals in our app and reach thousands of users ready to discover new places and experiences."
+    },
+    "right_column": {
+      "title": "Attract customers near you",
+      "description": "Send real-time notifications to users passing near your establishment and boost traffic to your space."
+    }
+  },
   "establishmentsPage": {
     "title": "Welcome new clients at your establishment",
     "description": "Bring new clients to your establishment effortlessly with Sheeper, at no cost to you. Join our platform to grow your business and fill your space with happy customers – for free.",

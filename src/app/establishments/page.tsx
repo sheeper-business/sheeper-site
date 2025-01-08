@@ -12,6 +12,8 @@ import i18n from '../../../i18n';
 import HeroSection from './components/HeroSection/HeroSection';
 import LoyaltyCardSection from './components/LoyaltyCardSection/LoyaltyCardSection';
 import InfluencerSection from './components/InfluencerSection/InfluencerSection';
+import DealShowcase from '../sections/DealShowcase/DealShowcase';
+import EstablishmentShowcase from './components/EstablishmentShowcase/EstablishmentShowcase';
 // import Image from 'next/image';
 
 export default function EstablishmentsPage() {
@@ -21,8 +23,9 @@ export default function EstablishmentsPage() {
     <I18nextProvider i18n={i18n}>
       <ThemeProvider theme={theme}>
         <HeroSection />
-        <LoyaltyCardSection />
         <InfluencerSection />
+        <EstablishmentShowcase />
+        <LoyaltyCardSection />
       </ThemeProvider>
     </I18nextProvider>
   );

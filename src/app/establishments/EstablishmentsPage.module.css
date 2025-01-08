@@ -49,6 +49,7 @@
 
 .loyaltyCardSection {
   display: flex;
+  margin-bottom: 4rem;
   background-color: var(--black-color);
   justify-content: center;
   align-items: center;
@@ -62,6 +63,7 @@
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
     margin-top: 3rem;
+    margin-bottom: 2rem;
     height: auto;
     padding-top: 2rem;
     padding-bottom: 0;

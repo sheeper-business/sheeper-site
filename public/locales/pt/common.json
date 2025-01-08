@@ -58,6 +58,16 @@
       "description": "Veja os deals que estão em alta agora, trazidos pelos seus criadores favoritos."
     }
   },
+  "establishment_showcase": {
+    "left_column": {
+      "title": "Promova o seu estabelecimento",
+      "description": "Destaque os seus deals na nossa app e alcance milhares de utilizadores prontos para descobrir novos lugares e experiências."
+    },
+    "right_column": {
+      "title": "Atraia clientes perto de si",
+      "description": "Envie notificações em tempo real para utilizadores que passam perto do seu estabelecimento e aumente o movimento no seu espaço"
+    }
+  },
   "establishmentsPage": {
     "title": "Receba novos clientes no seu estabelecimento",
     "description": "Traga novos clientes para o seu estabelecimento de forma simples com o Sheeper, sem custos para si. Junte-se à nossa plataforma e faça crescer o seu negócio, enchendo o seu espaço com clientes satisfeitos – totalmente grátis.",
