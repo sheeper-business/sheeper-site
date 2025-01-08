@@ -30,6 +30,9 @@ export function NavBar() {
         <Link className={css.navitem} href="#about_section">
           {t('navbar.about')}
         </Link>
+        <Link className={css.navitem} href="/establishments">
+          {t('navbar.establishments')}
+        </Link>
         <Link className={css.navitem} href="#how_it_works">
           {t('navbar.how_it_works')}
         </Link>

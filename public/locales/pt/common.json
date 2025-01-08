@@ -2,7 +2,8 @@
   "navbar": {
     "about": "Sobre",
     "how_it_works": "Como funciona",
-    "contacts": "Contactos"
+    "contacts": "Contactos",
+    "establishments": "Para Estabelecimentos"
   },
   "hero": {
     "title": "Descubra ofertas exclusivas em restaurantes e negócios locais feitas para si",
@@ -55,6 +56,19 @@
     "right_column": {
       "title": "Veja deals reais.",
       "description": "Veja os deals que estão em alta agora, trazidos pelos seus criadores favoritos."
+    }
+  },
+  "establishmentsPage": {
+    "title": "Receba novos clientes no seu estabelecimento",
+    "description": "Traga novos clientes para o seu estabelecimento de forma simples com o Sheeper, sem custos para si. Junte-se à nossa plataforma e faça crescer o seu negócio, enchendo o seu espaço com clientes satisfeitos – totalmente grátis.",
+    "form_link_button": "Preencha o formulário",
+    "loyaltyCardSection": {
+      "title": "Atraia e Fidelize Clientes no Seu Estabelecimento",
+      "description": "Com o Sheeper, ofereça cartões de fidelidade digitais e recompensas exclusivas para engajar seus clientes. Facilite o retorno ao seu estabelecimento e transforme visitas em lealdade, tudo de forma simples e gratuita."
+    },
+    "influencerSection": {
+      "title": "Colabore com Influenciadores para Impulsionar o Seu Negócio",
+      "description": "Aumente a visibilidade do seu estabelecimento e atraia novos clientes com a ajuda de influenciadores locais. Aumente a sua presença online e atraia mais clientes para o seu negócio, tudo de forma gratuita."
     }
   }
 }

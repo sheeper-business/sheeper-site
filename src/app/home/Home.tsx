@@ -12,6 +12,7 @@ import SpecialFeatures from '../sections/teste/SpecialFeatures';
 import { colors } from '../colors';
 import DealShowcase from '../sections/DealShowcase/DealShowcase';
 import { useTranslation } from 'react-i18next';
+import { AboutSection } from '../sections/About/AboutSection';
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -142,7 +143,7 @@ export const Home = () => {
       <SpecialFeatures />
       <DealShowcase />
 
-      {/* <AboutSection /> */}
+      <AboutSection />
       {/* <MakeUsSpecial /> */}
 
       {/* <AppScreensSection /> */}

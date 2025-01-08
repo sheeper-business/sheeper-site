@@ -2,7 +2,8 @@
   "navbar": {
     "about": "About",
     "how_it_works": "How it works",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "establishments": "For Establishments"
   },
   "hero": {
     "title": "Discover exclusive restaurant offers and local deals tailored for you",
@@ -55,6 +56,19 @@
     "right_column": {
       "title": "Watch real deals.",
       "description": "See what deals are trending right now from your favorite creators"
+    }
+  },
+  "establishmentsPage": {
+    "title": "Welcome new clients at your establishment",
+    "description": "Bring new clients to your establishment effortlessly with Sheeper, at no cost to you. Join our platform to grow your business and fill your space with happy customers – for free.",
+    "form_link_button": "Fill the form",
+    "loyaltyCardSection": {
+      "title": "Attract and Retain Customers at Your Establishment",
+      "description": "With Sheeper, offer digital loyalty cards and exclusive rewards to engage your customers. Encourage repeat visits and turn customers into loyal patrons, all in a simple and cost-free way."
+    },
+    "influencerSection": {
+      "title": "Collaborate with Influencers to Boost Your Business",
+      "description": "Leverage the power of influencers to promote your establishment and attract new customers. Collaborate with influencers to create engaging content and reach a wider audience, boosting your brand visibility and attracting more clients."
     }
   }
 }

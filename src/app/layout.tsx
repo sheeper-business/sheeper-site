@@ -5,6 +5,13 @@ import css from './page.module.css';
 import '@fontsource/raleway';
 import { NavBar } from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
+import '@fontsource/raleway';
+import '@fontsource/raleway/400.css'; // Specify weight
+import '@fontsource/raleway/600.css'; // Specify weight
+import '@fontsource/raleway/700.css'; // Specify weight
+import '@fontsource/raleway/900.css'; // Specify weight
+import '@fontsource/raleway/800.css'; // Specify weight
+import '@fontsource/raleway/400-italic.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
