@@ -55,6 +55,7 @@
   align-items: center;
   gap: 4rem;
   display: flex;
+  height: 100vh;
   align-items: center;
   overflow: hidden; /* Ensures the content stays within bounds */
   max-width: 100%; /* Prevents horizontal overflow */
