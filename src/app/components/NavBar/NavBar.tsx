@@ -17,10 +17,11 @@ export function NavBar() {
         <Link href={'/'}>
           <Image
             src="/sheeper-text.png"
-            alt="Logo da sua empresa"
+            alt="logo"
             width={158}
             height={37}
             className={css.logo}
+            priority
           />
         </Link>
 
