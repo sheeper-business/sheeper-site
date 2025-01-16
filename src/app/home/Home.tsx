@@ -143,7 +143,7 @@ export const Home = () => {
       <SpecialFeatures />
       <DealShowcase />
 
-      <AboutSection />
+      {/* <AboutSection /> */}
       {/* <MakeUsSpecial /> */}
 
       {/* <AppScreensSection /> */}
