@@ -3,6 +3,7 @@ import css from '../../EstablishmentsPage.module.css';
 import { AppButton } from '@/app/components/AppButton/AppButton';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const { t } = useTranslation('common');
@@ -10,8 +11,15 @@ export default function HeroSection() {
   return (
     <div className={css.container}>
       <div className={css.textContainerHeroSection}>
+        <div style={{ display: 'flex', flexDirection: 'row', gap: '4px' }}>
+          <p className={css.description}>{t('establishmentsPage.alreadyAPartner')}</p>
+          <Link href={'https://www.sheeperbusiness.app/login'} className={css.loginHere}>
+            {t('establishmentsPage.loginHere')}
+          </Link>
+        </div>
         <h1 className={css.title}>{t('establishmentsPage.title')}</h1>
         <p className={css.description}>{t('establishmentsPage.description')}</p>
+
         <div className={css.buttonContainer}>
           <AppButton
             type="button"

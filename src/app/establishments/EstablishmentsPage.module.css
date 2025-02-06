@@ -47,6 +47,21 @@
   }
 }
 
+.loginHere {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-color);
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.loginHere:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .loyaltyCardSection {
   display: flex;
   margin-bottom: 4rem;
