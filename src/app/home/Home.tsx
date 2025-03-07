@@ -20,18 +20,44 @@ export const Home = () => {
   return (
     <div className={css.host}>
       <Head>
-        <title>Deals - Sheeper</title>
-        <meta name="description" content="Find the best deals near you" />
-        <meta name="keywords" content="deals, discounts, offers, best deals, Sheeper" />
-        <meta property="og:title" content="Deals - Sheeper" />
-        <meta property="og:description" content="Find the best deals near you with Sheeper." />
-        <meta property="og:image" content="/hero-phone.png" />
+        {/* Primary Meta Tags */}
+        <title>Melhores Descontos em Restaurantes | Sheeper</title>
+        <meta name="description" content="Encontre promoções exclusivas e os melhores descontos em restaurantes de Lisboa. Veja vídeos de influenciadores e aproveite o nosso loyalty card." />
+        <meta name="keywords" content="descontos restaurantes Lisboa, promoções restaurantes Lisboa, ofertas exclusivas, influencers restaurantes, Sheeper deals, loyalty card Lisboa" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Sheeper - Encontre os Melhores Descontos em Restaurantes" />
+        <meta property="og:description" content="Descubra descontos exclusivos nos melhores restaurantes de Lisboa, com vídeos de influenciadores e ofertas especiais." />
+        <meta property="og:image" content="https://www.sheeper.app/hero-phone.png" />
         <meta property="og:url" content="https://www.sheeper.app" />
-        <meta name="twitter:title" content="Deals - Sheeper" />
-        <meta name="twitter:description" content="Find the best deals near you with Sheeper." />
-        <meta name="twitter:image" content="/hero-phone.png" />
+
+        {/* Twitter */}
+        <meta name="twitter:title" content="Sheeper - Os Melhores Descontos em Restaurantes de Lisboa" />
+        <meta name="twitter:description" content="Aproveite promoções incríveis e descubra novas experiências gastronômicas em Lisboa com Sheeper." />
+        <meta name="twitter:image" content="https://www.sheeper.app/hero-phone.png" />
         <meta name="twitter:card" content="summary_large_image" />
+
+        {/* Canonical URL to Avoid Duplicate Content Issues */}
+        <link rel="canonical" href="https://www.sheeper.app" />
+
+        {/* Schema Markup for SEO */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Sheeper",
+            "url": "https://www.sheeper.app",
+            "logo": "https://www.sheeper.app/logo.png",
+            "description": "Descubra descontos exclusivos em restaurantes de Lisboa. Veja vídeos de influenciadores e ganhe carimbos no nosso loyalty card.",
+            "sameAs": [
+              "https://www.instagram.com/sheeper.app/",
+              "https://www.tiktok.com/@sheeper"
+            ]
+          })}
+        </script>
       </Head>
+
 
       {/* Google Analytics */}
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-X3WY4BEL4R"></Script>

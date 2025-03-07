@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'sheeper',
-  description: 'the app to show you the best deals near you',
+  description: 'the app that shows you the best deals near you',
 };
 
 export default function RootLayout({
