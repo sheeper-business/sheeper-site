@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import css from './home.module.css';
 import Image from 'next/image';
 import '@fontsource/raleway';
@@ -13,9 +13,36 @@ import { colors } from '../colors';
 import DealShowcase from '../sections/DealShowcase/DealShowcase';
 import { useTranslation } from 'react-i18next';
 import { AboutSection } from '../sections/About/AboutSection';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { MakeUsSpecial } from '../sections/MakeUsSpecial/MakeUsSpecialSection';
+import { AppScreensSection } from '../sections/AppScreens/AppScreensSection';
 
 export const Home = () => {
   const { t } = useTranslation();
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  // Add smooth scrolling effect
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+    return () => {
+      document.documentElement.style.scrollBehavior = '';
+    };
+  }, []);
+
+  // Animation variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 60 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  };
+
+  const staggerChildren = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 }
+    }
+  };
 
   return (
     <div className={css.host}>
@@ -58,7 +85,6 @@ export const Home = () => {
         </script>
       </Head>
 
-
       {/* Google Analytics */}
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-X3WY4BEL4R"></Script>
       <Script
@@ -73,63 +99,118 @@ export const Home = () => {
         }}
       />
       <div className={css.containerFirstTwoSection}>
-        <section className={css.heroSection}>
+        <motion.section
+          className={css.heroSection}
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+        >
           <div className={css.newHeader}>
-            <div className={css.newContent}>
+            <motion.div
+              className={css.newContent}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+            >
               <h1 className={css.title}>{t('hero.title')}</h1>
               <p className={css.description}>{t('hero.description')}</p>
-            </div>
-            <div className={css.containerButtons}>
-              <a
+              <div style={{ marginTop: "1rem" }}>
+                <p className={css.linkText}>{t('showcase.partner.info')}</p>
+
+                <p className={css.linkText}>
+                  <a className={css.link} href="https://oiatg37ji32.typeform.com/to/i8HpBOjV">
+                    {t('showcase.partner')}
+                  </a>
+                </p>
+              </div>
+            </motion.div>
+            <motion.div
+              className={css.containerButtons}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+            >
+              <motion.a
                 target="blank"
                 rel="noopener noreferrer"
                 href="https://apps.apple.com/pt/app/sheeper/id6450721028"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <Image
                   src="/ios_store_button.webp"
                   alt="shepper ios"
                   width={211}
                   height={63}
-                  className={css.storesImages}
+                  className={`${css.storesImages} ${imageLoaded ? css.imageLoaded : css.imageLoading}`}
+                  onLoad={() => setImageLoaded(true)}
                 />
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 target="blank"
                 rel="noopener noreferrer"
                 href="https://play.google.com/store/apps/details?id=com.sheeper.sheeper"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <Image
                   src="/android_store_button.webp"
                   alt="shepper android"
                   width={211}
                   height={63}
-                  className={css.storesImages}
+                  className={`${css.storesImages} ${imageLoaded ? css.imageLoaded : css.imageLoading}`}
+                  onLoad={() => setImageLoaded(true)}
                 />
-              </a>
-            </div>
-            <Image
-              className={css.image}
-              src="/hero-phone.png"
-              alt="Login"
-              width={300}
-              height={325}
-              loading="eager"
-            />
+              </motion.a>
+            </motion.div>
+            <motion.div
+              animate={{
+                y: [0, -10, 0],
+              }}
+              transition={{
+                repeat: Infinity,
+                duration: 3,
+                ease: "easeInOut"
+              }}
+            >
+              <Image
+                className={`${css.image} ${imageLoaded ? css.imageLoaded : css.imageLoading}`}
+                src="/hero-phone.png"
+                alt="Login"
+                width={300}
+                height={325}
+                loading="eager"
+                onLoad={() => setImageLoaded(true)}
+              />
+            </motion.div>
           </div>
-        </section>
+        </motion.section>
         {/* <div className={css.loginContainer}>
         <span className={css.partner}>Are you a already a partner?&nbsp;</span>
         <Link href={'https://sheeperbusiness.app/login'} className={css.login}>
           Login here
         </Link>
       </div> */}
-        <ShowcaseSection />
+        {/* <ShowcaseSection /> */}
       </div>
 
-      <section id="how_it_works" className={css.sectionHowItWorks}>
+      <motion.section
+        id="how_it_works"
+        className={css.sectionHowItWorks}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={fadeInUp}
+      >
         <div>
           <h2 className={css.title}>{t('how_it_works.title')}</h2>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <motion.div
+            style={{ display: 'flex', justifyContent: 'center' }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <div
               style={{
                 background: '#E4F2FF',
@@ -143,9 +224,12 @@ export const Home = () => {
                 {t('how_it_works.steps.title')}
               </span>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className={css.stepsContainer}>
+        <motion.div
+          className={css.stepsContainer}
+          variants={staggerChildren}
+        >
           <Step
             title={t('how_it_works.steps.first.title')}
             description={t('how_it_works.steps.first.description')}
@@ -164,15 +248,14 @@ export const Home = () => {
             image="/RedeemDeal.png"
             index="3"
           />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
       <SpecialFeatures />
       <DealShowcase />
 
-      {/* <AboutSection /> */}
-      {/* <MakeUsSpecial /> */}
-
-      {/* <AppScreensSection /> */}
+      <AboutSection />
+      <MakeUsSpecial />
+      <AppScreensSection />
     </div>
   );
 };

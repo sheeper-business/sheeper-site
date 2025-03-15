@@ -1,102 +1,90 @@
+/* Add these styles to your existing CSS module */
+.imageLoading {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.imageLoaded {
+  opacity: 1;
+}
+
 .container {
+  padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 1rem;
 }
 
 .title {
+  text-align: center;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.description {
-  font-size: 1.25rem;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
-.textContainer {
-  padding: 2rem;
-  background-color: var(--background-color);
-  border-radius: 16px;
+  font-weight: 700;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.featureWide {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.mainImage {
-  grid-column: 1 / -1;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(3, 1fr); /* Changed to 3 columns for better balance */
   gap: 2rem;
 }
 
 .feature {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Ensure consistent height */
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  justify-content: space-between;
+}
+
+.feature:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  width: 100%;
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.textContainer {
+  padding: 1.5rem;
+  flex-grow: 1; /* Allow text container to fill available space */
+  display: flex;
+  flex-direction: column;
 }
 
 .featureHeader {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 1rem;
-}
-
-.icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  color: #3b82f6;
 }
 
 .featureTitle {
   font-size: 1.25rem;
   font-weight: 600;
+  margin: 0;
 }
 
 .featureDescription {
   color: #666;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1; /* Allow description to fill available space */
 }
 
-.image {
-  border-radius: 0.5rem;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
-
-@media (min-width: 768px) {
+/* Responsive adjustments */
+@media (max-width: 992px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .mainImage {
-    grid-column: 2;
-    grid-row: span 2;
-  }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .mainImage {
-    grid-column: 2;
-    grid-row: span 2;
+    grid-template-columns: 1fr;
   }
 }

@@ -6,7 +6,7 @@
     "establishments": "For Establishments"
   },
   "hero": {
-    "title": "Discover exclusive restaurant offers and local deals tailored for you",
+    "title": "Discover exclusive restaurant offers and deals tailored for you",
     "description": "With Sheeper, explore amazing deals at your favorite local restaurants and shops. Save more while enjoying authentic experiences tailored to your taste"
   },
   "how_it_works": {
@@ -27,27 +27,26 @@
       }
     }
   },
-  "what_make_us_special": {
-    "title": "What make us special?",
-    "available_to_everyone": {
-      "title": "Exclusive Deals at Your Favorite Restaurants and Bars",
-      "description": "Dive into a world of exclusive offers at the best restaurants and bars, where unique flavors and experiences await you."
-    },
-    "location_notifications": {
-      "title": "Real time notifications",
-      "description": "Receive notifications in real-time based on your current location, ensuring you never miss out on nearby deals. Our system intelligently targets deals near your common locations such as home, workplace, and frequent hangout spots, enhancing convenience and maximizing savings on-the-go."
-    },
-    "tailored_deals": {
-      "title": "Tailored deals",
-      "description": "Our algorithm customizes deals to match your unique preferences and purchasing behavior, ensuring every offer resonates with your interests and maximizes your savings potential."
-    }
+"what_make_us_special": {
+  "title": "What Makes Us Special?",
+  "available_to_everyone": {
+    "title": "Influencer Partnerships",
+    "description": "Sheeper connects establishments with influencers who promote authentic experiences, boosting restaurant visibility and helping users discover new spots with confidence."
   },
+  "location_notifications": {
+    "title": "Digital Loyalty Cards",
+    "description": "Our digital loyalty cards enable restaurants to reward customer loyalty through a simple system of stamp accumulation and exclusive promotions, encouraging repeat visits."
+  },
+  "tailored_deals": {
+    "title": "Personalized Offers & Real-Time Notifications",
+    "description": "Based on users’ location and interests, Sheeper sends tailored offers and instant notifications, ensuring establishments reach the right audience at the right time and users never miss a great deal."
+  }
+},
   "showcase": {
     "title": "Dive into sheeper: Where Deals Find You!",
     "description": " Scroll through popular picks, filter by categories, and choose your location to uncover the best local deals. Click on a deal to reveal all the juicy details, explore the description, location, similar deals, and share it with ease.",
-    "partner": "Do you want to become a partner? It`s free!",
-    "partner.info": "Discover how partnering with us can enhance your business and bring in more customers."
-  },
+    "partner": "Join us",
+    "partner.info": "Do you want to attract more clients to your establishment?",
   "deal_showcase": {
     "left_column": {
       "title": "Every deal you need.",
@@ -83,4 +82,5 @@
       "description": "Leverage the power of influencers to promote your establishment and attract new customers. Collaborate with influencers to create engaging content and reach a wider audience, boosting your brand visibility and attracting more clients."
     }
   }
+}
 }

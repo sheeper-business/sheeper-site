@@ -6,7 +6,7 @@
     "establishments": "Para Estabelecimentos"
   },
   "hero": {
-    "title": "Descubra ofertas exclusivas em restaurantes e negócios locais feitas para si",
+    "title": "Descubra ofertas exclusivas em restaurantes feitas para si",
     "description": "Com o Sheeper, explore ofertas incríveis nos seus restaurantes e lojas locais favoritos. Poupe mais enquanto aproveita experiências autênticas feitas para si."
   },
   "how_it_works": {
@@ -27,26 +27,26 @@
       }
     }
   },
-  "what_make_us_special": {
-    "title": "O que nos torna especiais?",
-    "available_to_everyone": {
-      "title": "Ofertas Exclusivas nos Seus Restaurantes e Bares Favoritos",
-      "description": "Explore um mundo de ofertas exclusivas nos melhores restaurantes e bares, onde sabores únicos e experiências incríveis esperam por si."
-    },
-    "location_notifications": {
-      "title": "Notificações em tempo real",
-      "description": "Receba notificações em tempo real com base na sua localização atual, garantindo que nunca perca oportunidades próximas. O nosso sistema identifica deals perto de locais que frequenta, como casa, trabalho ou pontos habituais, proporcionando conveniência e maximizando as poupanças no seu dia-a-dia."
-    },
-    "tailored_deals": {
-      "title": "Deals personalizados",
-      "description": "O nosso algoritmo adapta os deals às suas preferências e comportamentos de compra, garantindo que cada oferta é relevante para si e maximiza o seu potencial de poupança."
-    }
+"what_make_us_special": {
+  "title": "O que nos torna especiais?",
+  "available_to_everyone": {
+    "title": "Parcerias com Influenciadores",
+    "description": "A Sheeper conecta os estabelecimentos a influenciadores que promovem experiências autênticas, aumentando a visibilidade dos restaurantes e ajudando os utilizadores a descobrir novos locais com confiança."
   },
+  "location_notifications": {
+    "title": "Cartões de Fidelização Digitais",
+    "description": "Com os nossos cartões digitais, os restaurantes fidelizam os clientes através de um sistema simples de acumulação de carimbos e promoções exclusivas, incentivando visitas recorrentes."
+  },
+  "tailored_deals": {
+    "title": "Ofertas Personalizadas e Notificações em Tempo Real",
+    "description": "Baseando-se na localização e nos interesses dos utilizadores, a Sheeper envia ofertas adaptadas e notificações imediatas, permitindo que os estabelecimentos atinjam o público certo no momento ideal e que os clientes não percam oportunidades imperdíveis."
+  }
+},
   "showcase": {
-    "title": "Mergulhe no Sheeper: Onde os Deals o Encontram!",
+    "title": "Mergulhe na Sheeper: Onde os Deals o Encontram!",
     "description": "Percorra os destaques mais populares, filtre por categorias e escolha a sua localização para descobrir as melhores ofertas locais. Clique num deal para ver todos os detalhes, explorar a descrição, localização, deals semelhantes e partilhá-lo com facilidade.",
-    "partner": "Quer tornar-se um parceiro? É grátis!",
-    "partner.info": "Descubra como ser nosso parceiro pode melhorar o seu negócio e atrair mais clientes."
+    "partner": "Junte-se a nós!",
+    "partner.info": "Queres atrair mais clientes para o teu estabelecimento?"
   },
   "deal_showcase": {
     "left_column": {

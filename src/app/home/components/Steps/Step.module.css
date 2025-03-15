@@ -1,12 +1,58 @@
-.container {
+.step {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 310px;
   align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
 }
 
-.description {
-  flex-wrap: wrap;
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.stepNumber {
+  background-color: var(--primary-color);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.stepImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stepTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.stepDescription {
+  color: #666;
+  line-height: 1.6;
+}
+
+.imageLoading {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.imageLoaded {
+  opacity: 1;
 }

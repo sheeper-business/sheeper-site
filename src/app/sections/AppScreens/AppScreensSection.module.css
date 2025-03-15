@@ -9,3 +9,11 @@
      display: none;
     }
 }
+.imageLoading {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .imageLoaded {
+    opacity: 1;
+  }
