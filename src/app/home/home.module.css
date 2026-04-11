@@ -10,28 +10,137 @@
 }
 
 .heroSection {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  height: 90vh;
-  position: relative;
-  margin-bottom: 0rem;
-
-  background: url(../../../public/hero-section.png);
-  /* background-color: var(--primary-light-color); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 2rem;
+  padding: 2.5rem 1.75rem 3rem;
+  margin-bottom: 0;
+  border-radius: 1.75rem;
+  background: linear-gradient(
+    145deg,
+    #e8f6fd 0%,
+    var(--sheeper-cream, #fff9f4) 42%,
+    #ffffff 100%
+  );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
   @media screen and (max-width: 768px) {
-    flex-direction: column;
-    margin: 0rem 0;
-    margin-bottom: 3rem;
-    height: auto;
-    background: none;
-    justify-content: space-evenly;
-    justify-content: flex-start;
-    /* height: 60vh; */
+    padding: 1.75rem 1rem 2.5rem;
+    border-radius: 1.25rem;
   }
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 2rem 3rem;
+  align-items: center;
+  max-width: 72rem;
+  margin: 0 auto;
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.heroCopy {
+  text-align: left;
+  @media screen and (max-width: 900px) {
+    text-align: center;
+  }
+}
+
+.heroTitle {
+  font-size: clamp(1.85rem, 4vw, 2.65rem) !important;
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  margin: 0 0 1rem;
+  max-width: 22ch;
+  @media screen and (max-width: 900px) {
+    max-width: 20ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.heroDescription {
+  font-size: clamp(1rem, 1.35vw, 1.125rem);
+  line-height: 1.65;
+  color: rgba(0, 0, 0, 0.72);
+  margin: 0 0 1.5rem;
+  max-width: 38rem;
+  @media screen and (max-width: 900px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.heroVisual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+/* Device frame — turns a raw screenshot into a product mockup */
+.heroPhoneShell {
+  position: relative;
+  width: min(100%, 300px);
+  padding: 10px 10px 12px;
+  border-radius: 44px;
+  background: linear-gradient(
+    165deg,
+    #4a4a52 0%,
+    #2c2c30 22%,
+    #1a1a1e 55%,
+    #252528 100%
+  );
+  box-shadow:
+    0 36px 72px -16px rgba(0, 0, 0, 0.42),
+    0 16px 32px rgba(0, 157, 226, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.35);
+  transform: rotateY(-2deg) rotateX(2deg);
+  @media screen and (max-width: 900px) {
+    transform: none;
+    width: min(100%, 280px);
+  }
+}
+
+.heroPhoneScreen {
+  position: relative;
+  border-radius: 34px;
+  overflow: hidden;
+  background: #0a0a0b;
+  line-height: 0;
+}
+
+.heroScreenImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Light zoom + top bias tightens the crop so it reads as UI chrome, not a photo */
+  transform: scale(1.035);
+  transform-origin: center 6%;
+  @media screen and (max-width: 900px) {
+    transform: scale(1.03);
+    transform-origin: center 5%;
+  }
+}
+
+.storeBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+  align-items: center;
+  @media screen and (max-width: 900px) {
+    justify-content: center;
+  }
+}
+
+.storeLink {
+  line-height: 0;
 }
 
 .container {
@@ -303,4 +412,21 @@
 .linkText {
   color: var(--black-color);
   font-size: 1rem;
+}
+
+.heroCtas {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  @media screen and (max-width: 900px) {
+    align-items: center;
+  }
+}
+
+.heroPrimaryCta {
+  min-width: 11rem;
+  padding-left: 1.75rem !important;
+  padding-right: 1.75rem !important;
 }

@@ -35,8 +35,7 @@ export default function LoyaltyCardSection() {
             src={'/loyalty_card_section.png'}
             width={592}
             height={663}
-            alt="Loyalty Card"
-            layout="responsive"
+            alt="Sheeper digital loyalty card for businesses"
             priority
             className={`${imageLoaded ? css.imageLoaded : css.imageLoading}`}
             onLoad={() => setImageLoaded(true)}
@@ -56,13 +55,7 @@ export default function LoyaltyCardSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <AppButton
-            type="button"
-            variant="contained"
-            href="https://oiatg37ji32.typeform.com/to/i8HpBOjV"
-            formTarget="_blank"
-            color="primary"
-          >
+          <AppButton type="button" variant="contained" href="/#contact" color="primary">
             {t('establishmentsPage.form_link_button')}
           </AppButton>
         </motion.div>

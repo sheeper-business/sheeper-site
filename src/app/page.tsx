@@ -1,29 +1,54 @@
-'use client';
-
-import styles from './page.module.css';
-import '@fontsource/raleway';
-import '@fontsource/raleway/400.css'; // Specify weight
-import '@fontsource/raleway/600.css'; // Specify weight
-import '@fontsource/raleway/700.css'; // Specify weight
-import '@fontsource/raleway/900.css'; // Specify weight
-import '@fontsource/raleway/800.css'; // Specify weight
-import '@fontsource/raleway/400-italic.css';
+import type { Metadata } from 'next';
 import { Home } from './home/Home';
-import { ThemeProvider } from './ThemeProvider';
 
-// Import i18n and the provider
-import '../../i18n';
-import { I18nextProvider } from 'react-i18next';
-import i18n from '../../i18n'; // Import the initialized i18n instance
-import { Suspense } from 'react';
+const site = 'https://www.sheeper.app';
+
+export const metadata: Metadata = {
+  title: 'Sheeper — Cartões de fidelização digitais em Lisboa',
+  description:
+    'Acumule carimbos e desbloqueie recompensas nos restaurantes e cafés de Lisboa. Cartões de fidelização digitais na app Sheeper.',
+  keywords: [
+    'Sheeper',
+    'cartão fidelização Lisboa',
+    'loyalty card Lisbon',
+    'restaurantes Lisboa',
+    'fidelização digital',
+    'carimbos',
+    'app restaurantes',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'pt_PT',
+    url: site,
+    siteName: 'Sheeper',
+    title: 'Sheeper — Fidelização digital em Lisboa',
+    description:
+      'Cartões de fidelização digitais: carimbos, recompensas e os seus sítios favoritos na app Sheeper.',
+    images: [
+      {
+        url: '/hero-phone.png',
+        width: 300,
+        height: 325,
+        alt: 'Sheeper app no telemóvel — fidelização em Lisboa',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sheeper — Fidelização digital em Lisboa',
+    description:
+      'Cartões de fidelização digitais: carimbos e recompensas nos melhores sítios de Lisboa.',
+    images: [`${site}/hero-phone.png`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function Page() {
-  return (
-    <I18nextProvider i18n={i18n}>
-      <Suspense fallback={<div>Loading...</div>}></Suspense>
-      <ThemeProvider>
-        <Home />
-      </ThemeProvider>
-    </I18nextProvider>
-  );
+  return <Home />;
 }

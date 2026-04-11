@@ -60,13 +60,7 @@ export default function HeroSection() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <AppButton
-              type="button"
-              variant="contained"
-              href="https://oiatg37ji32.typeform.com/to/i8HpBOjV"
-              formTarget="_blank"
-              color="primary"
-            >
+            <AppButton type="button" variant="contained" href="/#contact" color="primary">
               {t('establishmentsPage.form_link_button')}
             </AppButton>
           </motion.div>
@@ -87,7 +81,7 @@ export default function HeroSection() {
             src={'/establishments_hero.png'}
             width={715}
             height={582}
-            alt="Establishments"
+            alt="Sheeper for businesses — digital loyalty in Lisbon"
             priority
             className={`${imageLoaded ? css.imageLoaded : css.imageLoading}`}
             onLoad={() => setImageLoaded(true)}

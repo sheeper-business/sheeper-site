@@ -1,4 +1,4 @@
 module.exports = {
-    siteUrl: 'https://sheeper.app',
-    generateRobotsTxt: true,
-  };
+  siteUrl: 'https://www.sheeper.app',
+  generateRobotsTxt: true,
+};

@@ -1,0 +1,112 @@
+.section {
+  width: 100%;
+  padding: 3.5rem 1.25rem 4rem;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--sheeper-cream, #fff9f4) 35%,
+    #e8f4fc 100%
+  );
+}
+
+.inner {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(1.65rem, 3.5vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0 0 0.85rem;
+  color: #1a1a1a;
+}
+
+.lead {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.65;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.72);
+  margin: 0 auto 2.25rem;
+  max-width: 40rem;
+}
+
+.cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    max-width: 26rem;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  position: relative;
+  border-radius: 16px;
+  padding: 1.35rem 1.15rem 1.35rem 1.35rem;
+  min-height: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.blue {
+  background: linear-gradient(165deg, rgba(0, 157, 226, 0.1) 0%, rgba(255, 255, 255, 0.95) 100%);
+  border: 1px solid rgba(0, 157, 226, 0.22);
+}
+
+.cream {
+  background: linear-gradient(165deg, var(--sheeper-warm, #f5e8dc) 0%, #fffefb 100%);
+  border: 1px solid rgba(199, 92, 92, 0.15);
+}
+
+.coral {
+  background: linear-gradient(165deg, rgba(199, 92, 92, 0.08) 0%, #ffffff 100%);
+  border: 1px solid rgba(199, 92, 92, 0.2);
+}
+
+.stepNum {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.blue .stepNum {
+  background: var(--primary-color, #009de2);
+  color: #fff;
+}
+
+.cream .stepNum {
+  background: #c75c5c;
+  color: #fff;
+}
+
+.coral .stepNum {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.cardText {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: rgba(0, 0, 0, 0.78);
+}

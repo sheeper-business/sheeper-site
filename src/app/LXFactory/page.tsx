@@ -8,11 +8,9 @@ export default function LXFactory() {
         <div className={css.host} >
             <section className={css.heroSection}>
                 <div className={css.content}>
-                    <h1 className={css.title}>Find the best deals in LX Factory
-                        {/* Unbeatable <span className={css.dealsText}>deals</span> */}
-                    </h1>
+                    <h1 className={css.title}>Collect stamps and rewards at LX Factory with Sheeper</h1>
                 </div>
-                <Image className={css.image} src="/hero-phone.png" alt="Login" width={300} height={320} loading='eager' />
+                <Image className={css.image} src="/hero-phone.png" alt="Sheeper loyalty app at LX Factory Lisbon" width={300} height={320} loading='eager' />
 
                 <div className={css.containerButtons}>
                     <a
