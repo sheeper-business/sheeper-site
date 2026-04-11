@@ -1,47 +1,52 @@
 import type { Metadata } from 'next';
 import { Home } from './home/Home';
-
-const site = 'https://www.sheeper.app';
+import {
+  defaultLocale,
+  defaultOgImagePath,
+  defaultOgImageSize,
+  siteName,
+  siteUrl,
+} from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Sheeper — Cartões de fidelização digitais em Lisboa',
+  title: `${siteName} — Cartões de fidelização digital para o seu espaço`,
   description:
-    'Acumule carimbos e desbloqueie recompensas nos restaurantes e cafés de Lisboa. Cartões de fidelização digitais na app Sheeper.',
+    'Quer clientes que regressem? A Sheeper oferece cartões de fidelização digital que as pessoas usam na app — para restaurantes e cafés em Lisboa. Carimbos, recompensas e menos papel.',
   keywords: [
-    'Sheeper',
-    'cartão fidelização Lisboa',
-    'loyalty card Lisbon',
-    'restaurantes Lisboa',
     'fidelização digital',
-    'carimbos',
-    'app restaurantes',
+    'cartão fidelização Lisboa',
+    'restaurantes Lisboa',
+    'app fidelização',
+    'Sheeper',
+    'loyalty card',
+    'carimbos digitais',
   ],
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
-    locale: 'pt_PT',
-    url: site,
-    siteName: 'Sheeper',
-    title: 'Sheeper — Fidelização digital em Lisboa',
+    locale: defaultLocale,
+    url: siteUrl,
+    siteName,
+    title: `${siteName} — Clientes que voltam com fidelização digital`,
     description:
-      'Cartões de fidelização digitais: carimbos, recompensas e os seus sítios favoritos na app Sheeper.',
+      'Cartões de fidelização na app Sheeper: carimbos, recompensas e mais visitas ao seu espaço em Lisboa.',
     images: [
       {
-        url: '/hero-phone.png',
-        width: 300,
-        height: 325,
-        alt: 'Sheeper app no telemóvel — fidelização em Lisboa',
+        url: defaultOgImagePath,
+        width: defaultOgImageSize.width,
+        height: defaultOgImageSize.height,
+        alt: 'Sheeper — cartões de fidelização digital na app',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sheeper — Fidelização digital em Lisboa',
+    title: `${siteName} — Fidelização digital em Lisboa`,
     description:
-      'Cartões de fidelização digitais: carimbos e recompensas nos melhores sítios de Lisboa.',
-    images: [`${site}/hero-phone.png`],
+      'Cartões de fidelização digital para restaurantes e cafés. Mais clientes habituais com a app Sheeper.',
+    images: [`${siteUrl}${defaultOgImagePath}`],
   },
   robots: {
     index: true,

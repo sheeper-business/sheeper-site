@@ -21,6 +21,7 @@ export type ContactFormValues = yup.InferType<typeof schema>;
 export function ContactForm() {
   const { t } = useTranslation('common');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorDetail, setErrorDetail] = useState<string | null>(null);
 
   const {
     register,
@@ -34,13 +35,16 @@ export function ContactForm() {
 
   const onSubmit = async (data: ContactFormValues) => {
     setStatus('loading');
+    setErrorDetail(null);
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
+      const body = (await res.json().catch(() => ({}))) as { reason?: string; error?: string };
       if (!res.ok) {
+        setErrorDetail(typeof body.reason === 'string' ? body.reason : null);
         setStatus('error');
         return;
       }
@@ -48,6 +52,7 @@ export function ContactForm() {
       reset();
     } catch {
       setStatus('error');
+      setErrorDetail(null);
     }
   };
 
@@ -83,7 +88,12 @@ export function ContactForm() {
       </div>
 
       {status === 'success' && <p className={css.bannerSuccess}>{t('contact.success')}</p>}
-      {status === 'error' && <p className={css.bannerError}>{t('contact.error')}</p>}
+      {status === 'error' && (
+        <div className={css.bannerErrorWrap}>
+          <p className={css.bannerError}>{t('contact.error')}</p>
+          {errorDetail && <p className={css.bannerDetail}>{errorDetail}</p>}
+        </div>
+      )}
 
       <AppButton type="submit" variant="contained" color="primary" disabled={status === 'loading'}>
         {status === 'loading' ? t('contact.sending') : t('contact.submit')}

@@ -18,6 +18,22 @@ function escapeHtml(s: string) {
     .replace(/"/g, '&quot;');
 }
 
+/** Resend returns different error shapes depending on API version / status code */
+function formatResendError(err: unknown): string {
+  if (err == null) return 'Unknown error from email provider';
+  if (typeof err === 'string') return err;
+  if (typeof err !== 'object') return String(err);
+  const o = err as Record<string, unknown>;
+  if (typeof o.message === 'string') return o.message;
+  if (Array.isArray(o.message)) return o.message.map(String).join('; ');
+  if (typeof o.name === 'string' && o.message === undefined) return o.name;
+  try {
+    return JSON.stringify(err);
+  } catch {
+    return 'Unknown error from email provider';
+  }
+}
+
 export async function POST(request: Request) {
   try {
     const json = await request.json();
@@ -32,36 +48,65 @@ export async function POST(request: Request) {
     const to = process.env.CONTACT_TO_EMAIL ?? 'sheeper.business@gmail.com';
 
     if (!apiKey || !from) {
-      console.error('Missing RESEND_API_KEY or RESEND_FROM');
-      return NextResponse.json({ error: 'Email not configured' }, { status: 503 });
+      const missing = [!apiKey && 'RESEND_API_KEY', !from && 'RESEND_FROM'].filter(Boolean).join(', ');
+      console.error('[api/contact] Missing env:', missing);
+      return NextResponse.json(
+        {
+          error: 'Failed to send',
+          reason: `Server misconfiguration: set ${missing} on your host (e.g. Vercel → Environment Variables).`,
+        },
+        { status: 503 }
+      );
     }
 
+    const textBody = [
+      `Name: ${data.name}`,
+      `Email: ${data.email}`,
+      data.company ? `Company / venue: ${data.company}` : null,
+      '',
+      'Message:',
+      data.message,
+    ]
+      .filter(Boolean)
+      .join('\n');
+
     const resend = new Resend(apiKey);
-    const { error } = await resend.emails.send({
-      from,
-      to: [to],
-      replyTo: data.email,
-      subject: `Sheeper website: message from ${data.name}`,
-      html: `
+
+    let result: Awaited<ReturnType<typeof resend.emails.send>>;
+    try {
+      result = await resend.emails.send({
+        from,
+        to: [to],
+        replyTo: data.email,
+        subject: `Sheeper website: message from ${data.name}`,
+        text: textBody,
+        html: `
         <p><strong>Name:</strong> ${escapeHtml(data.name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(data.email)}</p>
         ${data.company ? `<p><strong>Company / venue:</strong> ${escapeHtml(data.company)}</p>` : ''}
         <p><strong>Message:</strong></p>
         <p>${escapeHtml(data.message).replace(/\n/g, '<br/>')}</p>
       `,
-    });
+      });
+    } catch (e) {
+      const reason = e instanceof Error ? e.message : String(e);
+      console.error('[api/contact] Resend threw:', reason);
+      return NextResponse.json({ error: 'Failed to send', reason }, { status: 502 });
+    }
 
-    if (error) {
-      console.error(error);
-      return NextResponse.json({ error: 'Failed to send' }, { status: 502 });
+    if (result.error) {
+      const reason = formatResendError(result.error);
+      console.error('[api/contact] Resend error:', reason);
+      return NextResponse.json({ error: 'Failed to send', reason }, { status: 502 });
     }
 
     return NextResponse.json({ ok: true });
   } catch (e) {
     if (e instanceof yup.ValidationError) {
-      return NextResponse.json({ error: e.errors.join(', ') }, { status: 400 });
+      return NextResponse.json({ error: 'Validation failed', reason: e.errors.join(', ') }, { status: 400 });
     }
-    console.error(e);
-    return NextResponse.json({ error: 'Invalid request' }, { status: 400 });
+    const reason = e instanceof Error ? e.message : String(e);
+    console.error('[api/contact]', e);
+    return NextResponse.json({ error: 'Failed to send', reason }, { status: 400 });
   }
 }

@@ -1,7 +1,45 @@
-import React from 'react'
+import type { Metadata } from 'next';
+import React from 'react';
 import css from './lxfactory.module.css';
 import Image from 'next/image';
+import {
+  defaultLocale,
+  defaultOgImagePath,
+  defaultOgImageSize,
+  siteName,
+  siteUrl,
+} from '@/lib/seo';
 
+const path = '/LXFactory';
+
+export const metadata: Metadata = {
+  title: 'Sheeper no LX Factory',
+  description:
+    'Carimbos e recompensas no LX Factory com a app Sheeper — fidelização digital em Lisboa.',
+  alternates: {
+    canonical: path,
+  },
+  openGraph: {
+    type: 'website',
+    locale: defaultLocale,
+    url: `${siteUrl}${path}`,
+    siteName,
+    title: `LX Factory | ${siteName}`,
+    description: 'Fidelização digital e recompensas no LX Factory, Lisboa.',
+    images: [
+      {
+        url: defaultOgImagePath,
+        width: defaultOgImageSize.width,
+        height: defaultOgImageSize.height,
+        alt: 'Sheeper no LX Factory',
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function LXFactory() {
     return (

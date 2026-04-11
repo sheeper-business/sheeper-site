@@ -1,5 +1,43 @@
+import type { Metadata } from 'next';
 import React from 'react';
-import { colors } from '../colors';
+import {
+  defaultLocale,
+  defaultOgImagePath,
+  defaultOgImageSize,
+  siteName,
+  siteUrl,
+} from '@/lib/seo';
+
+const path = '/policy';
+
+export const metadata: Metadata = {
+  title: 'Política de privacidade',
+  description:
+    'Política de privacidade e termos de utilização da app Sheeper — dados, localização e contacto.',
+  alternates: {
+    canonical: path,
+  },
+  openGraph: {
+    type: 'website',
+    locale: defaultLocale,
+    url: `${siteUrl}${path}`,
+    siteName,
+    title: `Política de privacidade | ${siteName}`,
+    description: 'Termos e privacidade da app Sheeper.',
+    images: [
+      {
+        url: defaultOgImagePath,
+        width: defaultOgImageSize.width,
+        height: defaultOgImageSize.height,
+        alt: siteName,
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function Policy() {
   return (
