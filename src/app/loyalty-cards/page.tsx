@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { fetchPublicLoyaltyCards } from '@/lib/sheeper/api';
-import { LoyaltyCardTile } from './LoyaltyCardTile';
+import { LoyaltyCardsGrid } from './LoyaltyCardsGrid';
 import css from './loyalty-cards.module.css';
 
 export const metadata: Metadata = {
@@ -15,14 +15,12 @@ const copy = {
     lead: 'Escolha um espaço e adicione o cartão à carteira do telemóvel — sem precisar de conta na app.',
     empty: 'Não há cartões públicos disponíveis de momento.',
     error: 'Não foi possível carregar os cartões. Tente mais tarde.',
-    stamps: (n: number) => `${n} carimbos para recompensa`,
   },
   en: {
     title: 'Loyalty cards',
     lead: 'Pick a venue and add its card to your phone wallet — no Sheeper app account required.',
     empty: 'No public loyalty cards are available right now.',
     error: 'Could not load loyalty cards. Please try again later.',
-    stamps: (n: number) => `${n} stamps to reward`,
   },
 };
 
@@ -49,16 +47,7 @@ export default async function LoyaltyCardsPage() {
       {!loadError && cards.length === 0 ? <p className={css.empty}>{t.empty}</p> : null}
 
       {!loadError && cards.length > 0 ? (
-        <div className={css.grid}>
-          {cards.map((card) => (
-            <LoyaltyCardTile
-              key={card.id}
-              card={card}
-              allCards={cards}
-              stampsLabel={t.stamps(card.requiredStamps)}
-            />
-          ))}
-        </div>
+        <LoyaltyCardsGrid cards={cards} lang={lang} />
       ) : null}
     </main>
   );

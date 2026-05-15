@@ -6,7 +6,7 @@
 
 .back {
   display: inline-block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   font-size: 0.95rem;
   color: var(--primary-color);
   font-weight: 600;
@@ -21,7 +21,7 @@
   position: relative;
   border-radius: 24px;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   border: none;
   box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.04),
@@ -225,7 +225,7 @@
 
 /* —— Wallet panel —— */
 .belowCard {
-  margin-top: 0.75rem;
+  margin-top: 2.25rem;
 }
 
 .walletSection {
