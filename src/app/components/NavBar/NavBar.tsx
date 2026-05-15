@@ -31,6 +31,9 @@ export function NavBar() {
         <Link className={css.navitem} href="/#for-businesses">
           {t('navbar.for_businesses')}
         </Link>
+        <Link className={css.navitem} href="/loyalty-cards">
+          {t('navbar.loyalty_cards')}
+        </Link>
       </div>
       <div className={css.loginContainer}>
         <Link href="/#contact" className={css.contactCta}>
