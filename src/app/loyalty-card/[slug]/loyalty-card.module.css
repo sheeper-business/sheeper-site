@@ -1,0 +1,345 @@
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 5.5rem 1.25rem 2.5rem;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+/* —— Loyalty card —— */
+.card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: none;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.04),
+    0 20px 48px rgba(0, 0, 0, 0.14);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    transparent 42%,
+    rgba(0, 0, 0, 0.06) 100%
+  );
+  pointer-events: none;
+}
+
+.cardTop {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 1rem;
+  padding: 1.15rem 1.25rem 0.85rem;
+  align-items: center;
+}
+
+.establishmentImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.establishmentPlaceholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.25);
+  border: 3px solid rgba(255, 255, 255, 0.35);
+}
+
+.cardTopText {
+  min-width: 0;
+}
+
+.cardEyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+  margin-bottom: 0.25rem;
+}
+
+.establishmentName {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.cardDistance {
+  font-size: 0.875rem;
+  margin-top: 0.35rem;
+  opacity: 0.8;
+}
+
+/* Reward highlight */
+.rewardBox {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 1rem 0.85rem;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  color: #1a1a22;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.rewardContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.rewardLabel {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary-color);
+  margin-bottom: 0.35rem;
+}
+
+.rewardTitle {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0;
+  color: #111;
+}
+
+.rewardImage {
+  width: 72px;
+  height: 72px;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Stamps */
+.stampsPanel {
+  position: relative;
+  z-index: 1;
+  padding: 0.15rem 1rem 1.15rem;
+}
+
+.stampsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stampsLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.stampsPercent {
+  font-size: 0.85rem;
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+.progressTrack {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: currentColor;
+  border-radius: 99px;
+  transition: width 0.45s ease;
+}
+
+.stampsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: flex-start;
+}
+
+.dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.12);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.dotFilled {
+  background: currentColor;
+  color: var(--white-color);
+  border-color: currentColor;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.terms {
+  position: relative;
+  z-index: 1;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 0 1rem 1rem;
+  opacity: 0.85;
+  white-space: pre-wrap;
+}
+
+/* —— Wallet panel —— */
+.belowCard {
+  margin-top: 0.75rem;
+}
+
+.walletSection {
+  background: linear-gradient(180deg, var(--sheeper-cream) 0%, #fff 100%);
+  border-radius: 22px;
+  padding: 1.25rem 1.25rem;
+  border: 1px solid rgba(0, 157, 226, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 157, 226, 0.08);
+}
+
+.walletTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.walletLead {
+  color: var(--text-grey-color);
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.statusLine {
+  color: var(--text-grey-color);
+  margin: 0.5rem 0 0;
+  line-height: 1.45;
+  font-size: 0.875rem;
+}
+
+.walletButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.walletButton :global(.MuiButton-startIcon) {
+  margin-right: 0.35rem;
+}
+
+.walletIconApple {
+  font-size: 1.2rem;
+}
+
+.walletIconGoogle {
+  font-size: 1.2rem;
+  color: #4285f4;
+}
+
+.status {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.statusError {
+  color: var(--sheeper-coral);
+}
+
+.statusSuccess {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.fieldError {
+  color: var(--sheeper-coral);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 520px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .establishmentName {
+    font-size: 1.35rem;
+  }
+
+  .rewardTitle {
+    font-size: 1.2rem;
+  }
+
+  .dot {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,0 +1,217 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 7rem 1.5rem 4rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  color: var(--text-grey-color);
+  font-size: 1.125rem;
+  max-width: 42rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.empty {
+  color: var(--text-grey-color);
+  padding: 2rem 0;
+}
+
+.error {
+  color: var(--sheeper-coral);
+  padding: 1rem 0;
+}
+
+.gate {
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+.gate.gateCompact {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.gateTitleCompact {
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.leadCompact {
+  margin-bottom: 0.85rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.gateFormCompact {
+  margin-top: 0.75rem;
+  gap: 0.75rem;
+}
+
+.gateTitle {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.gateForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.gateRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 520px) {
+  .gateRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.fieldError {
+  color: var(--sheeper-coral);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.oauthSection {
+  margin: 1.25rem 0 0;
+}
+
+.oauthButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 320px;
+}
+
+.googleButtonWrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.oauthButton {
+  justify-content: center;
+}
+
+.oauthIconApple {
+  font-size: 1.2rem;
+}
+
+.oauthDivider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.25rem 0;
+  max-width: 320px;
+  color: var(--text-grey-color);
+  font-size: 0.875rem;
+}
+
+.oauthDivider::before,
+.oauthDivider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.oauthDivider span {
+  white-space: nowrap;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--white-color);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.tile:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.tileImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--background-color);
+}
+
+.tileImage {
+  object-fit: cover;
+}
+
+/* Franchise logos from the API are often ~73px; don't stretch to fill the tile. */
+.tileImageWrapLogo {
+  background: #f5f5f5;
+}
+
+.tileImageLogo {
+  object-fit: contain;
+  padding: 1.25rem;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.tileBody {
+  padding: 1rem 1.25rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tileName {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.tileReward {
+  font-size: 0.95rem;
+  color: var(--text-grey-color);
+  line-height: 1.4;
+}
+
+.tileMeta {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 0.25rem;
+}

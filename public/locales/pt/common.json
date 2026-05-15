@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "what_we_do": "O que fazemos",
+    "for_businesses": "Para negócios",
+    "establishments": "Para negócios",
+    "contact_cta": "Contacte-nos"
+  },
+  "hero": {
+    "title": "Traga os clientes de volta—visita após visita",
+    "description": "Quer mais clientes que regressem vezes seguidas? A Sheeper dá ao seu espaço um cartão de fidelização digital que as pessoas usam mesmo. Fale connosco e explicamos como funciona.",
+    "contact_button": "Contacte-nos",
+    "image_aria": "App Sheeper: cartões de fidelização digitais com carimbos e recompensas"
+  },
+  "what_we_do": {
+    "title": "O que fazemos",
+    "lead": "A Sheeper é a app onde vivem os cartões de fidelização digitais. As pessoas acumulam carimbos nos sítios de que gostam e desbloqueiam recompensas que você define—simples para quem visita, claro para si.",
+    "point1": "Os clientes descobrem o espaço e mantêm todos os carimbos na mesma app.",
+    "point2": "Cada visita vale um carimbo; a regra e a recompensa são suas.",
+    "point3": "Trocam a recompensa no local—sem cartões perdidos nem plástico a mais."
+  },
+  "for_businesses_section": {
+    "title": "Para o seu negócio",
+    "loyalty_title": "Porque a fidelização compensa",
+    "loyalty_text": "Clientes que voltam gastam mais e recomendam. Um programa de fidelização recompensa quem regressa, ajuda a preencher horários mais vazios e dá uma razão para vos escolher de novo.",
+    "digital_title": "Porque o digital ganha ao papel",
+    "digital_text": "Cartões em papel perdem-se, rasgam-se ou ficam em casa. O digital está no telemóvel, acompanha o cliente e é mais simples de gerir: sem impressões, sem livros de carimbos manuais e com tudo atualizado num só sítio."
+  },
+  "footer": {
+    "title": "Descarregue a app Sheeper",
+    "contact_heading": "Contacto"
+  },
+  "contact": {
+    "title": "Contacte-nos",
+    "description": "Dúvidas sobre a Sheeper ou sobre o seu espaço? Respondemos em breve.",
+    "name": "Nome",
+    "email": "Email",
+    "company": "Empresa ou espaço (opcional)",
+    "message": "Mensagem",
+    "submit": "Enviar",
+    "sending": "A enviar…",
+    "success": "Obrigado — recebemos a sua mensagem.",
+    "error": "Algo correu mal. Tente novamente ou envie email diretamente."
+  },
+  "establishmentsPage": {
+    "title": "Fidelização digital para o seu espaço",
+    "description": "Ofereça um cartão de fidelização que o cliente leva sempre consigo. A Sheeper ajuda negócios em Lisboa — fale connosco.",
+    "form_link_button": "Contacte-nos",
+    "alreadyAPartner": "Já é parceiro? ",
+    "loginHere": "Inicie sessão aqui",
+    "loyaltyCardSection": {
+      "title": "Fidelização digital, menos trabalho",
+      "description": "Carimbos e recompensas na app Sheeper — ajudamos a pôr tudo a funcionar."
+    }
+  }
+}

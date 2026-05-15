@@ -1,0 +1,56 @@
+{
+  "navbar": {
+    "what_we_do": "What we do",
+    "for_businesses": "For businesses",
+    "establishments": "For businesses",
+    "loyalty_cards": "Loyalty cards",
+    "contact_cta": "Contact us"
+  },
+  "hero": {
+    "title": "Bring customers back—visit after visit",
+    "description": "Want more guests who return again and again? Sheeper gives your venue a digital loyalty card customers actually use. Get in touch and we’ll walk you through it.",
+    "contact_button": "Contact us",
+    "image_aria": "Sheeper app: digital loyalty cards with stamps and rewards"
+  },
+  "what_we_do": {
+    "title": "What we do",
+    "lead": "Sheeper is the app where digital loyalty cards live. People collect stamps at places they love and unlock rewards you define—simple for guests, clear for you.",
+    "point1": "Customers discover your venue and keep every stamp in one app.",
+    "point2": "Each visit adds a stamp; you choose the reward and the rules.",
+    "point3": "They redeem on-site—no lost cards, no extra plastic."
+  },
+  "for_businesses_section": {
+    "title": "For your business",
+    "loyalty_title": "Why loyalty works",
+    "loyalty_text": "Repeat customers spend more and recommend you. A loyalty programme rewards regulars, fills quieter hours, and gives people a reason to choose you again instead of trying somewhere new.",
+    "digital_title": "Why digital beats paper",
+    "digital_text": "Paper cards get lost, torn, or forgotten. Digital cards live in the customer’s phone, are always with them, and are easier to run for you — no printing, no manual stamp books, and updates in one place."
+  },
+  "footer": {
+    "title": "Get the Sheeper app",
+    "contact_heading": "Contact"
+  },
+  "contact": {
+    "title": "Contact us",
+    "description": "Ask about Sheeper or tell us about your venue — we’ll reply shortly.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company or venue (optional)",
+    "message": "Message",
+    "submit": "Send",
+    "sending": "Sending…",
+    "success": "Thanks — we’ve received your message.",
+    "error": "Something went wrong. Please try again or email us directly."
+  },
+  "establishmentsPage": {
+    "title": "Digital loyalty for your venue",
+    "description": "Offer a loyalty card customers actually carry. Sheeper helps Lisbon venues reward regulars — contact us to talk it through.",
+    "form_link_button": "Contact us",
+    "alreadyAPartner": "Already a partner? ",
+    "loginHere": "Log in here",
+    "loyaltyCardSection": {
+      "title": "Digital loyalty, less hassle",
+      "description": "Stamps and rewards in the Sheeper app — we’ll help you get set up."
+    }
+  }
+}

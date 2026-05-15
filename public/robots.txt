@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.sheeper.app
+
+# Sitemaps
+Sitemap: https://www.sheeper.app/sitemap.xml

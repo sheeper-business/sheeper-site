@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    max-width: 320px;
+    gap: 1rem;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title {    
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-black-color);
+
+}
+
+.description {
+    color: var(--text-grey-color);
+}

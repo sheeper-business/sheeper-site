@@ -1,8 +1,47 @@
+import type { Metadata } from 'next';
 import React from 'react';
+import {
+  defaultLocale,
+  defaultOgImagePath,
+  defaultOgImageSize,
+  siteName,
+  siteUrl,
+} from '@/lib/seo';
+
+const path = '/policy';
+
+export const metadata: Metadata = {
+  title: 'Política de privacidade',
+  description:
+    'Política de privacidade e termos de utilização da app Sheeper — dados, localização e contacto.',
+  alternates: {
+    canonical: path,
+  },
+  openGraph: {
+    type: 'website',
+    locale: defaultLocale,
+    url: `${siteUrl}${path}`,
+    siteName,
+    title: `Política de privacidade | ${siteName}`,
+    description: 'Termos e privacidade da app Sheeper.',
+    images: [
+      {
+        url: defaultOgImagePath,
+        width: defaultOgImageSize.width,
+        height: defaultOgImageSize.height,
+        alt: siteName,
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function Policy() {
   return (
-    <div style={{ padding: '4rem' }}>
+    <div style={{ padding: '4rem', background: "#E6E6E6", borderRadius: 16, margin: "0 2rem 1rem 2rem" }}>
       <h2 style={{ marginBottom: '2rem' }}>Privacy Policy</h2>
       <p>
         This document sets forth the terms and conditions governing the use of the Sheeper mobile
